@@ -1,0 +1,1694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MonStyle | Try it free | What-to-wear</title>
+
+	<!-- css boostrap -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.css" integrity="sha512-6g9IGCc67eh+xK03Z8ILcnKLbJnKBW+qpEdoUVD/4hBa2Ghiq5dQgeNOGWJfGoe9tdCRM4GpJMnsRXa2FDJp9Q==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/css/bootstrap-select.min.css" integrity="sha512-ARJR74swou2y0Q2V9k0GbzQ/5vJ2RBSoCWokg4zkfM29Fb3vZEQyv0iWBMW/yvKgyHSR/7D64pFMmU8nYmbRkg==" crossorigin="anonymous" />
+    <!-- link css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<!-- mdb button css -->
+	<link rel="stylesheet" href="./css/mdb.min.css">
+	<!-- css main -->
+	<link rel="stylesheet" type="text/css" href="./css/wear_try_style.css">
+	<link rel="stylesheet" href="./css/menu_style.css">
+	<link rel="stylesheet" href="./css/signin-style.css">
+	<link rel="stylesheet" href="./css/signup-style.css">
+	<link rel="stylesheet" href="./css/footer-style.css">
+	<!-- css icon heart -->
+	<link rel="stylesheet" type="text/css" href="./css/icon-heart.css">
+
+	<!-- icon -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+	
+</head>
+<body>
+
+	<!-- modal announcement -->
+	<div class="modal fade" id="modal-announce" tabindex="-1" role="dialog" aria-labelledby="modal-announceLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header d-block">
+				<button type="button" class="close float-right" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">×</span>
+				</button>
+				<h5 class="modal-title text-center" id="modal-announceLabel">What-to-wear Today</h5>
+				
+			</div>
+			<div class="modal-body text-center">
+				This is a trial version.
+				So suggestions are based on your information entries only (your height, your weight, ...). 
+                Please sign in or sign up to experience this application in the best way.
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+		</div>
+	</div>
+
+    <div id='container'>
+        <div id='header'>
+            <div id='account'>
+                <div class="row">
+                    <div class="col-md-1 col-sm-1"></div>
+                    <div class="col-md-2 col-sm-2 no-padding">
+                        <svg width="0.94em" height="0.94em" viewBox="0 0 16 16" class="bi bi-telephone-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z"/>
+                        </svg>
+                        <span> Call us : (028) 3835 4266</span>
+                    </div>
+
+                    <div class="col-md-4 col-sm-3 no-padding">
+                        <svg width="1.05em" height="1.05em" viewBox="0 0 16 16" class="bi bi-envelope-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+                        </svg>
+                        <span id="mail"> E-mail : info@fit.hcmus.edu.vn</span>
+                    </div>
+                    
+                    
+                    <div class="col-md-2 pl-5 col-sm-3 no-padding">
+                        <a class="js-icon" href="../index.html">
+                            <i class="fa fa-power-off" style="font-size:0.96em"></i>
+                            <span>Turn off trial mode</span>
+                        </a>
+                    </div>
+				
+                    
+                    <div class="col-md-1 col-sm-1 no-padding">
+                        <a class="js-icon" href="#" data-toggle="modal" data-target="#sign-in">
+                            <i style="font-size: 0.96em;" class="fas fa-sign-in-alt"></i>
+                            <span >Sign In</span>
+                        </a>
+                    </div>
+                    
+                    <div class="col-md-1 col-sm-1 no-padding">
+                        <a class="js-icon" href="#"  data-toggle="modal" data-target="#sign-up">
+                            <i style="font-size: 0.8em;" class="fas fa-user-plus"></i>
+                                <span>Sign Up</span>
+                        </a> 
+					</div>
+                    
+                    <div class="col-md-1 col-sm-1 no-padding"></div>
+                </div>
+            </div>
+
+            <div id='logo'>
+                <a href="../Home_try/home_try_index.html"><img id='img-logo' src="./img/logo-1.png"></a>
+            </div>
+            
+            <nav id="nav_menu">
+                <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link" id="nav-home-tab" href="../Home_try/home_try_index.html" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+                    <a class="nav-item nav-link active" id="nav-profile-tab" href="../Wear/wear_try_index.html" role="tab" aria-controls="nav-profile" aria-selected="false">What-to-wear Today</a>
+                    <a class="nav-item nav-link" id="nav-contact-tab" href="../Shopping/shopping-index-trial.html" role="tab" aria-controls="nav-contact" aria-selected="false">Shopping</a>
+                    <a class="nav-item nav-link " id="nav-contact-tab" href="../Wardrobe_try/wardrobe_try_index.html" role="tab" aria-controls="nav-contact" aria-selected="false">Wardrobe</a>
+                </div>
+            </nav>
+            
+        </div>
+        
+
+        <!-- them vao day -->
+        <div id='site-main'>
+            <!-- search bar -->
+			<div class="container">
+				<iframe name="votar" style="display:none;"></iframe>
+				<form target="votar" class="searchbar form-inline d-flex justify-content-center md-form form-sm active-purple-2 mt-2">
+					<input id="input" class="form-control form-control-sm mr-3 w-75 searchBar" type="text" placeholder="What are you looking for ?" aria-label="Search" style="padding-left: 10px;">
+					<i class='fas fa-search'></i>
+					<p id="demo"></p>
+				</form>
+				<p class="example">
+					<small> 
+						<i>Example: </i>
+						<a><i id="happy">I'm happy..., </i></a>
+						<a><i id="day">I want to go out....</i></a>
+					</small>
+				</p>
+			</div>
+
+			<!-- menu suggest key words -->
+ 
+			<div class="portfolio-menu mt-3 mb-5">
+				<p class="portfolio-menu-title">Most popular keywords</p>
+				<ul class="menu">
+					<li class="list btn btn-mdb-elegant active" data-filter="all">all</li>
+					<li class="list btn btn-mdb-elegant" data-filter="type1">office</li>
+					<li class="list btn btn-mdb-elegant" data-filter="type2">go out</li>
+					<li class="list btn btn-mdb-elegant" data-filter="type3">dating</li>
+					<li class="list btn btn-mdb-elegant" data-filter="type4">holiday</li>
+					<li class="list btn btn-mdb-elegant" data-filter="type5">event</li>
+					<li class="list btn btn-mdb-elegant" data-filter="type6">sport</li>
+				</ul>
+			</div>
+			
+			<!-- tabs -->
+			<nav>
+				<div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+					<a class="nav-item nav-link active" id="nav-suggestion-tab" data-toggle="tab" href="#nav-suggestion" role="tab" aria-controls="nav-suggestion" aria-selected="true">&#10004; Suggestion</a>
+					<a class="nav-item nav-link" id="nav-favorite-tab" data-toggle="tab" href="#nav-favorite" role="tab" aria-controls="nav-favorite" aria-selected="false"><span class="heart">&#10084;</span> Favorite</a>
+				</div>
+			</nav>
+			<div class="tab-content content" id="nav-tabContent">
+				<div class="tab-pane fade show active" id="nav-suggestion" role="tabpanel" aria-labelledby="nav-suggestion-tab">
+					
+						<!-- itemBox -->
+						<div class="product">
+							<div class="itemBox type1 type2 type-black all mb-3" id="itemBox-1">
+								<div class="container img-container">
+									<div class="item-img">
+										<img src="img/polite-5.jpg" class="image" data-toggle="modal" data-target="#modal_1">
+										<div class="overlay" data-toggle="modal" data-target="#modal_1">Click for more details</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="itemBox type4 type-black all mb-3" id="itemBox-2">
+								<div class="container img-container ">
+									<div class="item-img">
+										<img src="img/holiday-2.jpg" class="image " data-toggle="modal" data-target="#modal_2">
+										<div class="overlay" data-toggle="modal" data-target="#modal_2">Click for more details</div>
+									</div>
+								</div>
+							</div>
+						
+							<div class="itemBox type2 all mb-3" id="itemBox-3">
+								<div class="container img-container ">
+									<div class="item-img">
+									<img src="img/goout-model-2.jpg" class="image " data-toggle="modal" data-target="#modal_3">
+									<div class="overlay" data-toggle="modal" data-target="#modal_3">Click for more details</div>
+									</div>
+								</div>
+							</div>
+						
+							<div class="itemBox type3 type2 all mb-3" id="itemBox-4">
+								<div class="container img-container ">
+									<div class="item-img">
+									<img src="img/dating-1.jpg" class="image " data-toggle="modal" data-target="#modal_4">
+									<div class="overlay" data-toggle="modal" data-target="#modal_4">Click for more details</div>
+									</div>
+								</div>
+							</div>
+						
+							<div class="itemBox type6 type-black all mb-3" id="itemBox-5">
+								<div class="container img-container ">
+									<div class="item-img">
+									<img src="img/sport-1.jpg" class="image " data-toggle="modal" data-target="#modal_5">
+									<div class="overlay" data-toggle="modal" data-target="#modal_5">Click for more details</div>
+									</div>
+								</div>
+							</div>
+						
+							<div class="itemBox type5 all mb-3" id="itemBox-6">
+								<div class="container img-container ">
+									<div class="item-img">
+									<img src="img/event-1.jpg" class="image " data-toggle="modal" data-target="#modal_6">
+									<div class="overlay" data-toggle="modal" data-target="#modal_6">Click for more details</div>
+									</div>
+								</div>
+							</div>
+						
+							<div class="itemBox type2 type3 all mb-3" id="itemBox-7">
+								<div class="container img-container ">
+									<div class="item-img">
+									<img src="img/goout-3.jpg" class="image " data-toggle="modal" data-target="#modal_7">
+									<div class="overlay" data-toggle="modal" data-target="#modal_7">Click for more details</div>
+									</div>
+								</div>
+							</div>
+						
+							
+							<div class="itemBox type3 all mb-3" id="itemBox-8">
+								<div class="container img-container ">
+									<div class="item-img">
+									<img src="img/dating-2.jpg" class="image " data-toggle="modal" data-target="#modal_8">
+									<div class="overlay" data-toggle="modal" data-target="#modal_8">Click for more details</div>
+									</div>
+								</div>
+							</div>
+						
+							<div class="itemBox type2 all mb-3" id="itemBox-9">
+								<div class="container img-container ">
+									<div class="item-img">
+									<img src="img/goout-4.jpg" class="image " data-toggle="modal" data-target="#modal_9">
+									<div class="overlay" data-toggle="modal" data-target="#modal_9">Click for more details</div>
+									</div>
+								</div>
+							</div>
+						
+							<div class="itemBox type6 all mb-3" id="itemBox-10">
+								<div class="container img-container ">
+									<div class="item-img">
+									<img src="img/sport-2.jpg" class="image " data-toggle="modal" data-target="#modal_10">
+									<div class="overlay" data-toggle="modal" data-target="#modal_10">Click for more details</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="itemBox type5 type4 type-black all mb-3 show-more" id="itemBox-11 ">
+								<div class="container img-container">
+									<div class="item-img">
+										<img src="img/event-3.jpg" class="image" data-toggle="modal" data-target="#modal_11">
+										<div class="overlay" data-toggle="modal" data-target="#modal_11">Click for more details</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="itemBox type1 type2 all mb-3 show-more" id="itemBox-12">
+								<div class="container img-container ">
+									<div class="item-img">
+										<img src="img/polite-6.jpg" class="image " data-toggle="modal" data-target="#modal_12">
+										<div class="overlay" data-toggle="modal" data-target="#modal_12">Click for more details</div>
+									</div>
+								</div>
+							</div>
+						
+							<div class="itemBox type3 type5 all mb-3 show-more" id="itemBox-13">
+								<div class="container img-container ">
+									<div class="item-img">
+									<img src="img/event-2.jpg" class="image " data-toggle="modal" data-target="#modal_13">
+									<div class="overlay" data-toggle="modal" data-target="#modal_13">Click for more details</div>
+									</div>
+								</div>
+							</div>
+						
+							<div class="itemBox type6 type2 all mb-3 show-more" id="itemBox-14">
+								<div class="container img-container ">
+									<div class="item-img">
+									<img src="img/sport-3.jpg" class="image " data-toggle="modal" data-target="#modal_14">
+									<div class="overlay" data-toggle="modal" data-target="#modal_14">Click for more details</div>
+									</div>
+								</div>
+							</div>
+						
+							<div class="itemBox type3 all mb-3 show-more" id="itemBox-15">
+								<div class="container img-container ">
+									<div class="item-img">
+									<img src="img/dating-4.jpg" class="image " data-toggle="modal" data-target="#modal_15">
+									<div class="overlay" data-toggle="modal" data-target="#modal_15">Click for more details</div>
+									</div>
+								</div>
+							</div>
+						
+							<div class="itemBox type4 all mb-3 show-more" id="itemBox-16">
+								<div class="container img-container ">
+									<div class="item-img">
+									<img src="img/holiday-3.jpg" class="image " data-toggle="modal" data-target="#modal_16">
+									<div class="overlay" data-toggle="modal" data-target="#modal_16">Click for more details</div>
+									</div>
+								</div>
+							</div>
+						
+							<div class="itemBox type2 type1 type3 type4 type5 all mb-3  show-more" id="itemBox-17">
+								<div class="container img-container ">
+									<div class="item-img">
+									<img src="img/goout-5.jpg" class="image " data-toggle="modal" data-target="#modal_17">
+									<div class="overlay" data-toggle="modal" data-target="#modal_17">Click for more details</div>
+									</div>
+								</div>
+							</div>
+						
+							
+							<div class="itemBox type1 type2  type-black all mb-3 show-more" id="itemBox-18">
+								<div class="container img-container ">
+									<div class="item-img">
+									<img src="img/polite-7.jpg" class="image " data-toggle="modal" data-target="#modal_18">
+									<div class="overlay" data-toggle="modal" data-target="#modal_18">Click for more details</div>
+									</div>
+								</div>
+							</div>
+						
+							<div class="itemBox type1 type4 type5 all mb-3 show-more" id="itemBox-19">
+								<div class="container img-container ">
+									<div class="item-img">
+									<img src="img/polite-4.jpg" class="image " data-toggle="modal" data-target="#modal_19">
+									<div class="overlay" data-toggle="modal" data-target="#modal_19">Click for more details</div>
+									</div>
+								</div>
+							</div>
+						
+							<div class="itemBox type6 type2 type-black all mb-3 show-more" id="itemBox-20">
+								<div class="container img-container ">
+									<div class="item-img">
+									<img src="img/sport-4.jpg" class="image " data-toggle="modal" data-target="#modal_20">
+									<div class="overlay" data-toggle="modal" data-target="#modal_20">Click for more details</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<!-- modals -->
+						<div>
+							<!-- modal 1 --> 
+							<div class="modal fade modal-img" id="modal_1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLongTitle">outfit details</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<div class="container-fluid">
+												<div class="row">
+													<div class="col-md-5 img-modal">
+														<img class="img-fluid" src="img/polite-5.jpg">
+													</div>
+													<div class="col-md-7 details">
+														<span class="title-details">&#x2022; You should choose this outfit, because:</span><br>
+														&#x2713; It is a great choice for work ...<br>
+														&#x2713; Polite and neat clothes <br>
+														&#x2713; It is also suitable for your physique (height, weight).<br>
+														&#x2713; It is in accordance with your information (your age, your profession, your style).<br>
+														<div class="outfit-items">
+															<span class="title-details">&#x2022; Clothing items: </span><br>
+															<div class="img-items">
+																<img class="img-fluid outfit-item mb-1" src="img/polite-5.1.jpg">
+																<img class="img-fluid outfit-item mb-1" src="img/polite-5.2.jpg">
+																<img class="img-fluid outfit-item mb-1" src="img/polite-5.3.jpg">
+																<img class="img-fluid outfit-item" src="img/polite-5.4.jpg">
+																<img class="img-fluid outfit-item" src="img/polite-5.5.jpg">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>	
+										</div>
+						
+										<div class="footer">
+											<div class="row">
+												<div id="btn-favorite" class="col-md-6">
+													<div class="container">
+														<svg class="ico" width="24" height="24" viewBox="0 0 24 24" data-placement="right" data-toggle="tooltip"  data-html="true" title="Favorite this !"  id="tooltip">
+															<path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"></path>
+														</svg>
+													</div>
+												</div>
+												<div class="col-md-6 text-right">
+													<button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>											
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						
+							<!-- modal 2 -->
+							<div class="modal fade modal-img" id="modal_2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLongTitle">outfit details</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<div class="container-fluid">
+												<div class="row">
+													<div class="col-md-5 img-modal">
+														<img class="img-fluid" src="img/holiday-2.jpg">
+													</div>
+													<div class="col-md-7 details">
+														<span class="title-details">&#x2022; You should choose this outfit, because:</span><br>
+														&#x2713; It is a great choice for holiday...<br>
+														&#x2713; Chic and outstanding clothing <br>
+														&#x2713; It is also suitable for your physique (height, weight).<br>
+														&#x2713; It is in accordance with your information (your age, your profession, your style).<br>
+														<div class="outfit-items">
+															<span class="title-details">&#x2022; Clothing items: </span><br>
+															<div class="img-items">
+																<img class="img-fluid outfit-item" src="img/holiday-2.1.jpg">
+																<img class="img-fluid outfit-item" src="img/holiday-2.2.jpg">
+																<img class="img-fluid outfit-item" src="img/holiday-2.3.jpg">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>	
+										</div>
+						
+										<div class="footer">
+											<div class="row">
+												<div id="btn-favorite" class="col-md-6">
+													<div class="container">
+														<svg class="ico" width="24" height="24" viewBox="0 0 24 24" data-placement="right" data-toggle="tooltip"  data-html="true" title="Favorite this !"  id="tooltip">
+															<path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"></path>
+														</svg>
+													</div>
+												</div>
+												<div class="col-md-6 text-right">
+													<button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						
+							<!-- modal 3 -->
+							<div class="modal fade modal-img" id="modal_3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLongTitle">outfit details</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<div class="container-fluid">
+												<div class="row">
+													<div class="col-md-5 img-modal">
+														<img class="img-fluid" src="img/goout-model-2.jpg">
+													</div>
+													<div class="col-md-7 details">
+														<span class="title-details">&#x2022; You should choose this outfit, because:</span><br>
+														&#x2713; It is a great choice for going out, hanging out, ...<br>
+														&#x2713; Season: It is in autumn. <br>
+														&nbsp; &nbsp; &nbsp; &#8658; This style is very suitable. <br>
+														&#x2713; It is also suitable for your physique (height, weight).<br>
+														&#x2713; It is in accordance with your information (your age, your profession, your style).<br>
+														<div class="outfit-items">
+															<span class="title-details">&#x2022; Clothing items: </span><br>
+															<div class="img-items">
+																<div>
+																<img class="img-fluid outfit-item" src="img/goout-model-2.1.jpg">
+																<img class="img-fluid outfit-item" src="img/goout-model-2.2.jpg">
+																<img class="img-fluid outfit-item" src="img/goout-model-2.3.jpg">
+																</div>
+																<div class="mt-1">
+																<img class="img-fluid outfit-item" src="img/goout-model-2.4.jpg">
+																<img class="img-fluid outfit-item" src="img/goout-model-2.5.jpg">
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>	
+										</div>
+						
+										<div class="footer">
+											<div class="row">
+												<div id="btn-favorite" class="col-md-6">
+													<div class="container">
+														<svg class="ico" width="24" height="24" viewBox="0 0 24 24" data-placement="right" data-toggle="tooltip"  data-html="true" title="Favorite this !"  id="tooltip">
+															<path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"></path>
+														</svg>
+													</div>
+												</div>
+												<div class="col-md-6 text-right">
+													<button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						
+							<!-- modal 4 -->
+							<div class="modal fade modal-img" id="modal_4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLongTitle">outfit details</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<div class="container-fluid">
+												<div class="row">
+													<div class="col-md-5 img-modal">
+														<img class="img-fluid" src="img/dating-1.jpg">
+													</div>
+													<div class="col-md-7 details">
+														<span class="title-details">&#x2022; You should choose this outfit, because:</span><br>
+														&#x2713; It is a great choice for dating ...<br>
+														&#x2713; Sweet, cute style<br>
+														&#x2713; Season: It is in autumn. <br>
+														&nbsp; &nbsp; &nbsp; &#8658; This style is very suitable. <br>
+														&#x2713; It is also suitable for your physique (height, weight).<br>
+														&#x2713; It is in accordance with your information (your age, your profession, your style).<br>
+														<div class="outfit-items">
+															<span class="title-details">&#x2022; Clothing items: </span><br>
+															<div class="img-items">
+																<div>
+																<img class="img-fluid outfit-item" src="img/dating-1.1.jpg">
+																<img class="img-fluid outfit-item" src="img/dating-1.2.jpg">
+																<img class="img-fluid outfit-item" src="img/dating-1.3.jpg">
+																</div>
+																<div class="mt-1">
+																<img class="img-fluid outfit-item" src="img/dating-1.4.jpg">
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>	
+										</div>
+						
+										<div class="footer">
+											<div class="row">
+												<div id="btn-favorite" class="col-md-6">
+													<div class="container">
+														<svg class="ico" width="24" height="24" viewBox="0 0 24 24" data-placement="right" data-toggle="tooltip"  data-html="true" title="Favorite this !"  id="tooltip">
+															<path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"></path>
+														</svg>
+													</div>
+												</div>
+												<div class="col-md-6 text-right">
+													<button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<!-- modal 5 -->
+							<div class="modal fade modal-img" id="modal_5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLongTitle">outfit details</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<div class="container-fluid">
+												<div class="row">
+													<div class="col-md-5 img-modal">
+														<img class="img-fluid" src="img/sport-1.jpg">
+													</div>
+													<div class="col-md-7 details">
+														<span class="title-details">&#x2022; You should choose this outfit, because:</span><br>
+														&#x2713; It is a great choice for sports ...<br>
+														&#x2713; Dynamic and healthy style <br>
+														&#x2713; It is also suitable for your physique (height, weight).<br>
+														&#x2713; It is in accordance with your information (your age, your profession, your style).<br>
+														<div class="outfit-items">
+															<span class="title-details"> &#x2022;Clothing items: </span><br>
+															<div class="img-items">
+																<div>
+																<img class="img-fluid outfit-item" src="img/sport-1.1.jpg">
+																<img class="img-fluid outfit-item" src="img/sport-1.2.jpg">
+																<img class="img-fluid outfit-item" src="img/sport-1.3.jpg">
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>	
+										</div>
+						
+										<div class="footer">
+											<div class="row">
+												<div id="btn-favorite" class="col-md-6">
+													<div class="container">
+														<svg class="ico" width="24" height="24" viewBox="0 0 24 24" data-placement="right" data-toggle="tooltip"  data-html="true" title="Favorite this !"  id="tooltip">
+															<path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"></path>
+														</svg>
+													</div>
+												</div>
+												<div class="col-md-6 text-right">
+													<button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						
+							<!-- modal 6 -->
+							<div class="modal fade modal-img" id="modal_6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLongTitle">outfit details</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<div class="container-fluid">
+												<div class="row">
+													<div class="col-md-5 img-modal">
+														<img class="img-fluid" src="img/event-1.jpg">
+													</div>
+													<div class="col-md-7 details">
+														<span class="title-details">&#x2022; You should choose this outfit, because:</span><br>
+														&#x2713; It is a great choice for events ...<br>
+														&#x2713; Luxurious and aristocratic style <br>
+														&#x2713; It is also suitable for your physique (height, weight).<br>
+														&#x2713; It is in accordance with your information (your age, your profession, your style).<br>
+														<div class="outfit-items">
+															<span class="title-details">&#x2022; Clothing items: </span><br>
+															<div class="img-items">
+																<div>
+																<img class="img-fluid outfit-item mb-1" src="img/event-1.1.jpg">
+																<img class="img-fluid outfit-item mb-1" src="img/event-1.2.jpg">
+																<img class="img-fluid outfit-item mb-1" src="img/event-1.3.jpg">
+																<img class="img-fluid outfit-item mb-1" src="img/event-1.4.jpg">
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>	
+										</div>
+						
+										<div class="footer">
+											<div class="row">
+												<div id="btn-favorite" class="col-md-6">
+													<div class="container">
+														<svg class="ico" width="24" height="24" viewBox="0 0 24 24" data-placement="right" data-toggle="tooltip"  data-html="true" title="Favorite this !"  id="tooltip">
+															<path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"></path>
+														</svg>
+													</div>
+												</div>
+												<div class="col-md-6 text-right">
+													<button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						
+							<!-- modal 7 -->
+							<div class="modal fade modal-img" id="modal_7" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLongTitle">outfit details</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<div class="container-fluid">
+												<div class="row">
+													<div class="col-md-5 img-modal">
+														<img class="img-fluid" src="img/goout-3.jpg">
+													</div>
+													<div class="col-md-7 details">
+														<span class="title-details">&#x2022; You should choose this outfit, because:</span><br>
+														&#x2713; It is a great choice for work ...<br>
+														&#x2713; Polite and neat clothes <br>
+														&#x2713; It is also suitable for your physique (height, weight).<br>
+														&#x2713; It is in accordance with your information (your age, your profession, your style).<br>
+														<div class="outfit-items">
+															<span class="title-details">&#x2022; Clothing items: </span><br>
+															<div class="img-items">
+																<div>
+																<img class="img-fluid outfit-item mb-1" src="img/goout-3.1.jpg">
+																<img class="img-fluid outfit-item mb-1" src="img/goout-3.2.jpg">
+																<img class="img-fluid outfit-item mb-1" src="img/goout-3.3.jpg">
+																<img class="img-fluid outfit-item  mb-1" src="img/goout-3.4.jpg">
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>	
+										</div>
+						
+										<div class="footer">
+											<div class="row">
+												<div id="btn-favorite" class="col-md-6">
+													<div class="container">
+														<svg class="ico" width="24" height="24" viewBox="0 0 24 24" data-placement="right" data-toggle="tooltip"  data-html="true" title="Favorite this !"  id="tooltip">
+															<path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"></path>
+														</svg>
+													</div>
+												</div>
+												<div class="col-md-6 text-right">
+													<button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- modal 8 -->
+							<div class="modal fade modal-img" id="modal_8" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLongTitle">outfit details</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<div class="container-fluid">
+												<div class="row">
+													<div class="col-md-5 img-modal">
+														<img class="img-fluid" src="img/dating-2.jpg">
+													</div>
+													<div class="col-md-7 details">
+														<span class="title-details">&#x2022; You should choose this outfit, because:</span><br>
+														&#x2713; It is a great choice for going out, hanging out, ...<br>
+														&#x2713; Season: It is in autumn. <br>
+														&nbsp; &nbsp; &nbsp; &#8658; This style is very suitable. <br>
+														&#x2713; It is also suitable for your physique (height, weight).<br>
+														&#x2713; It is in accordance with your information (your age, your profession, your style).<br>
+														<div class="outfit-items">
+															<span class="title-details">&#x2022; Clothing items: </span><br>
+															<div class="img-items">
+																<img class="img-fluid outfit-item" src="img/dating-2.1.jpg">
+																<img class="img-fluid outfit-item" src="img/dating-2.2.jpg">
+																<img class="img-fluid outfit-item" src="img/dating-2.3.jpg">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>	
+										</div>
+						
+										<div class="footer">
+											<div class="row">
+												<div id="btn-favorite" class="col-md-6">
+													<div class="container">
+														<svg class="ico" width="24" height="24" viewBox="0 0 24 24" data-placement="right" data-toggle="tooltip"  data-html="true" title="Favorite this !"  id="tooltip">
+															<path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"></path>
+														</svg>
+													</div>
+												</div>
+												<div class="col-md-6 text-right">
+													<button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- modal 9 -->
+							<div class="modal fade modal-img" id="modal_9" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLongTitle">outfit details</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<div class="container-fluid">
+												<div class="row">
+													<div class="col-md-5 img-modal">
+														<img class="img-fluid" src="img/goout-4.jpg">
+													</div>
+													<div class="col-md-7 details">
+														<span class="title-details">&#x2022; You should choose this outfit, because:</span><br>
+														&#x2713; It is a great choice for going out, hanging out, ...<br>
+														&#x2713; Season: It is in autumn. <br>
+														&nbsp; &nbsp; &nbsp; &#8658; This style is very suitable. <br>
+														&#x2713; It is also suitable for your physique (height, weight).<br>
+														&#x2713; It is in accordance with your information (your age, your profession, your style).<br>
+														<div class="outfit-items">
+															<span class="title-details">&#x2022; Clothing items: </span><br>
+															<div class="img-items">
+																<img class="img-fluid outfit-item" src="img/goout-4.1.jpg">
+																<img class="img-fluid outfit-item" src="img/goout-4.2.jpg">
+																<img class="img-fluid outfit-item" src="img/goout-4.3.jpg">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>	
+										</div>
+						
+										<div class="footer">
+											<div class="row">
+												<div id="btn-favorite" class="col-md-6">
+													<div class="container">
+														<svg class="ico" width="24" height="24" viewBox="0 0 24 24" data-placement="right" data-toggle="tooltip"  data-html="true" title="Favorite this !"  id="tooltip">
+															<path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"></path>
+														</svg>
+													</div>
+												</div>
+												<div class="col-md-6 text-right">
+													<button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- modal 10 -->
+							<div class="modal fade modal-img" id="modal_10" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLongTitle">outfit details</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<div class="container-fluid">
+												<div class="row">
+													<div class="col-md-5 img-modal">
+														<img class="img-fluid" src="img/sport-2.jpg">
+													</div>
+													<div class="col-md-7 details">
+														<span class="title-details">&#x2022; You should choose this outfit, because:</span><br>
+														&#x2713; It is a great choice for sports ...<br>
+														&#x2713; Dynamic and healthy style <br>
+														&#x2713; It is also suitable for your physique (height, weight).<br>
+														&#x2713; It is in accordance with your information (your age, your profession, your style).<br>
+														<div class="outfit-items">
+															<span class="title-details"> &#x2022;Clothing items: </span><br>
+															<div class="img-items">
+																<img class="img-fluid outfit-item" src="img/sport-2.1.jpg">
+																<img class="img-fluid outfit-item" src="img/sport-2.2.jpg">
+																<img class="img-fluid outfit-item" src="img/sport-2.3.jpg">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>	
+										</div>
+						
+										<div class="footer">
+											<div class="row">
+												<div id="btn-favorite" class="col-md-6">
+													<div class="container">
+														<svg class="ico" width="24" height="24" viewBox="0 0 24 24" data-placement="right" data-toggle="tooltip"  data-html="true" title="Favorite this !"  id="tooltip">
+															<path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"></path>
+														</svg>
+													</div>
+												</div>
+												<div class="col-md-6 text-right">
+													<button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- modal 11 --> 
+							<div class="modal fade modal-img" id="modal_11" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLongTitle">outfit details</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<div class="container-fluid">
+												<div class="row">
+													<div class="col-md-5 img-modal">
+														<img class="img-fluid" src="img/event-3.jpg">
+													</div>
+													<div class="col-md-7 details">
+														<span class="title-details">&#x2022; You should choose this outfit, because:</span><br>
+														&#x2713; It is a great choice for events ...<br>
+														&#x2713; Luxurious and aristocratic style <br>
+														&#x2713; It is also suitable for your physique (height, weight).<br>
+														&#x2713; It is in accordance with your information (your age, your profession, your style).<br>
+														<div class="outfit-items">
+															<span class="title-details">&#x2022; Clothing items: </span><br>
+															<div class="img-items">
+																<img class="img-fluid outfit-item mb-1" src="img/event-3.1.jpg">
+																<img class="img-fluid outfit-item mb-1" src="img/event-3.2.jpg">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>	
+										</div>
+						
+										<div class="footer">
+											<div class="row">
+												<div id="btn-favorite" class="col-md-6">
+													<div class="container">
+														<svg class="ico" width="24" height="24" viewBox="0 0 24 24" data-placement="right" data-toggle="tooltip"  data-html="true" title="Favorite this !"  id="tooltip">
+															<path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"></path>
+														</svg>
+													</div>
+												</div>
+												<div class="col-md-6 text-right">
+													<button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>											
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						
+							<!-- modal 12 -->
+							<div class="modal fade modal-img" id="modal_12" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLongTitle">outfit details</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<div class="container-fluid">
+												<div class="row">
+													<div class="col-md-5 img-modal">
+														<img class="img-fluid" src="img/polite-6.jpg">
+													</div>
+													<div class="col-md-7 details">
+														<span class="title-details">&#x2022; You should choose this outfit, because:</span><br>
+														&#x2713; It is a great choice for work ...<br>
+														&#x2713; Polite and neat clothes <br>
+														&#x2713; It is also suitable for your physique (height, weight).<br>
+														&#x2713; It is in accordance with your information (your age, your profession, your style).<br>
+														<div class="outfit-items">
+															<span class="title-details">&#x2022; Clothing items: </span><br>
+															<div class="img-items">
+																<img class="img-fluid outfit-item" src="img/polite-6.1.jpg">
+																<img class="img-fluid outfit-item" src="img/polite-6.2.jpg">
+																<img class="img-fluid outfit-item" src="img/polite-6.3.jpg">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>	
+										</div>
+						
+										<div class="footer">
+											<div class="row">
+												<div id="btn-favorite" class="col-md-6">
+													<div class="container">
+														<svg class="ico" width="24" height="24" viewBox="0 0 24 24" data-placement="right" data-toggle="tooltip"  data-html="true" title="Favorite this !"  id="tooltip">
+															<path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"></path>
+														</svg>
+													</div>
+												</div>
+												<div class="col-md-6 text-right">
+													<button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						
+							<!-- modal 13 -->
+							<div class="modal fade modal-img" id="modal_13" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLongTitle">outfit details</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<div class="container-fluid">
+												<div class="row">
+													<div class="col-md-5 img-modal">
+														<img class="img-fluid" src="img/event-2.jpg">
+													</div>
+													<div class="col-md-7 details">
+														<span class="title-details">&#x2022; You should choose this outfit, because:</span><br>
+														&#x2713; It is a great choice for going out, dating, events ...<br>
+														&nbsp; &nbsp; &nbsp; &#8658; This style is very suitable. <br>
+														&#x2713; It is also suitable for your physique (height, weight).<br>
+														&#x2713; It is in accordance with your information (your age, your profession, your style).<br>
+														<div class="outfit-items">
+															<span class="title-details">&#x2022; Clothing items: </span><br>
+															<div class="img-items">
+																<img class="img-fluid outfit-item" src="img/event-2.1.jpg">
+																<img class="img-fluid outfit-item" src="img/event-2.2.jpg">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>	
+										</div>
+						
+										<div class="footer">
+											<div class="row">
+												<div id="btn-favorite" class="col-md-6">
+													<div class="container">
+														<svg class="ico" width="24" height="24" viewBox="0 0 24 24" data-placement="right" data-toggle="tooltip"  data-html="true" title="Favorite this !"  id="tooltip">
+															<path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"></path>
+														</svg>
+													</div>
+												</div>
+												<div class="col-md-6 text-right">
+													<button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- modal 14 -->
+							<div class="modal fade modal-img" id="modal_14" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLongTitle">outfit details</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<div class="container-fluid">
+												<div class="row">
+													<div class="col-md-5 img-modal">
+														<img class="img-fluid" src="img/sport-3.jpg">
+													</div>
+													<div class="col-md-7 details">
+														<span class="title-details">&#x2022; You should choose this outfit, because:</span><br>
+														&#x2713; It is a great choice for going out, sports ...<br>
+														&#x2713; It is also suitable for your physique (height, weight).<br>
+														&#x2713; It is in accordance with your information (your age, your profession, your style).<br>
+														<div class="outfit-items">
+															<span class="title-details">&#x2022; Clothing items: </span><br>
+															<div class="img-items">
+																<img class="img-fluid outfit-item" src="img/sport-3.1.jpg">
+																<img class="img-fluid outfit-item" src="img/sport-3.2.jpg">
+																<img class="img-fluid outfit-item" src="img/sport-3.3.jpg">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>	
+										</div>
+						
+										<div class="footer">
+											<div class="row">
+												<div id="btn-favorite" class="col-md-6">
+													<div class="container">
+														<svg class="ico" width="24" height="24" viewBox="0 0 24 24" data-placement="right" data-toggle="tooltip"  data-html="true" title="Favorite this !"  id="tooltip">
+															<path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"></path>
+														</svg>
+													</div>
+												</div>
+												<div class="col-md-6 text-right">
+													<button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						
+							<!-- modal 15 -->
+							<div class="modal fade modal-img" id="modal_15" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLongTitle">outfit details</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<div class="container-fluid">
+												<div class="row">
+													<div class="col-md-5 img-modal">
+														<img class="img-fluid" src="img/dating-4.jpg">
+													</div>
+													<div class="col-md-7 details">
+														<span class="title-details">&#x2022; You should choose this outfit, because:</span><br>
+														&#x2713; It is a great choice for dating ...<br>
+														&#x2713; Sweet, cute style<br>
+														&#x2713; Season: It is in autumn. <br>
+														&nbsp; &nbsp; &nbsp; &#8658; This style is very suitable. <br>
+														&#x2713; It is also suitable for your physique (height, weight).<br>
+														&#x2713; It is in accordance with your information (your age, your profession, your style).<br>
+														<div class="outfit-items">
+															<span class="title-details"> &#x2022;Clothing items: </span><br>
+															<div class="img-items">
+																<div>
+																<img class="img-fluid outfit-item" src="img/dating-4.1.jpg">
+																<img class="img-fluid outfit-item" src="img/dating-4.2.jpg">
+																<img class="img-fluid outfit-item" src="img/dating-4.3.jpg">
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>	
+										</div>
+						
+										<div class="footer">
+											<div class="row">
+												<div id="btn-favorite" class="col-md-6">
+													<div class="container">
+														<svg class="ico" width="24" height="24" viewBox="0 0 24 24" data-placement="right" data-toggle="tooltip"  data-html="true" title="Favorite this !"  id="tooltip">
+															<path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"></path>
+														</svg>
+													</div>
+												</div>
+												<div class="col-md-6 text-right">
+													<button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						
+							<!-- modal 16 -->
+							<div class="modal fade modal-img" id="modal_16" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLongTitle">outfit details</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<div class="container-fluid">
+												<div class="row">
+													<div class="col-md-5 img-modal">
+														<img class="img-fluid" src="img/holiday-3.jpg">
+													</div>
+													<div class="col-md-7 details">
+														<span class="title-details">&#x2022; You should choose this outfit, because:</span><br>
+														&#x2713; It is a great choice for events, holiday ...<br>
+														&#x2713; Luxurious and aristocratic style <br>
+														&#x2713; It is also suitable for your physique (height, weight).<br>
+														&#x2713; It is in accordance with your information (your age, your profession, your style).<br>
+														<div class="outfit-items">
+															<span class="title-details">&#x2022; Clothing items: </span><br>
+															<div class="img-items">
+																<div>
+																<img class="img-fluid outfit-item mb-1" src="img/holiday-3.1.jpg">
+																<img class="img-fluid outfit-item mb-1" src="img/holiday-3.2.jpg">
+																<img class="img-fluid outfit-item mb-1" src="img/holiday-3.3.jpg">
+																<img class="img-fluid outfit-item mb-1" src="img/holiday-3.4.jpg">
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>	
+										</div>
+						
+										<div class="footer">
+											<div class="row">
+												<div id="btn-favorite" class="col-md-6">
+													<div class="container">
+														<svg class="ico" width="24" height="24" viewBox="0 0 24 24" data-placement="right" data-toggle="tooltip"  data-html="true" title="Favorite this !"  id="tooltip">
+															<path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"></path>
+														</svg>
+													</div>
+												</div>
+												<div class="col-md-6 text-right">
+													<button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						
+							<!-- modal 17 -->
+							<div class="modal fade modal-img" id="modal_17" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLongTitle">outfit details</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<div class="container-fluid">
+												<div class="row">
+													<div class="col-md-5 img-modal">
+														<img class="img-fluid" src="img/goout-5.jpg">
+													</div>
+													<div class="col-md-7 details">
+														<span class="title-details">&#x2022; You should choose this outfit, because:</span><br>
+														&#x2713; It is a great choice for going out, datings, events, work ...<br>
+														&#x2713; Polite and neat clothes <br>
+														&#x2713; Sweet, cute style<br>
+														&#x2713; It is also suitable for your physique (height, weight).<br>
+														&#x2713; It is in accordance with your information (your age, your profession, your style).<br>
+														<div class="outfit-items">
+															<span class="title-details">&#x2022; Clothing items: </span><br>
+															<div class="img-items">
+																<div>
+																<img class="img-fluid outfit-item mb-1" src="img/goout-5.1.jpg">
+																<img class="img-fluid outfit-item mb-1" src="img/goout-5.2.jpg">
+																<img class="img-fluid outfit-item mb-1" src="img/goout-5.3.jpg">
+																<img class="img-fluid outfit-item  mb-1" src="img/goout-5.4.jpg">
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>	
+										</div>
+						
+										<div class="footer">
+											<div class="row">
+												<div id="btn-favorite" class="col-md-6">
+													<div class="container">
+														<svg class="ico" width="24" height="24" viewBox="0 0 24 24" data-placement="right" data-toggle="tooltip"  data-html="true" title="Favorite this !"  id="tooltip">
+															<path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"></path>
+														</svg>
+													</div>
+												</div>
+												<div class="col-md-6 text-right">
+													<button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- modal 18 -->
+							<div class="modal fade modal-img" id="modal_18" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLongTitle">outfit details</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<div class="container-fluid">
+												<div class="row">
+													<div class="col-md-5 img-modal">
+														<img class="img-fluid" src="img/polite-7.jpg">
+													</div>
+													<div class="col-md-7 details">
+														<span class="title-details">&#x2022; You should choose this outfit, because:</span><br>
+														&#x2713; It is a great choice for work ...<br>
+														&#x2713; Season: It is in autumn. <br>
+														&nbsp; &nbsp; &nbsp; &#8658; This style is very suitable. <br>
+														&#x2713; It is also suitable for your physique (height, weight).<br>
+														&#x2713; It is in accordance with your information (your age, your profession, your style).<br>
+														<div class="outfit-items">
+															<span class="title-details">&#x2022; Clothing items: </span><br>
+															<div class="img-items">
+																<img class="img-fluid outfit-item mb-1" src="img/polite-7.1.jpg">
+																<img class="img-fluid outfit-item mb-1" src="img/polite-7.2.jpg">
+																<img class="img-fluid outfit-item mb-1" src="img/polite-7.3.jpg">
+																<img class="img-fluid outfit-item mb-1" src="img/polite-7.4.jpg">
+																<img class="img-fluid outfit-item mb-1" src="img/polite-7.5.jpg">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>	
+										</div>
+						
+										<div class="footer">
+											<div class="row">
+												<div id="btn-favorite" class="col-md-6">
+													<div class="container">
+														<svg class="ico" width="24" height="24" viewBox="0 0 24 24" data-placement="right" data-toggle="tooltip"  data-html="true" title="Favorite this !"  id="tooltip">
+															<path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"></path>
+														</svg>
+													</div>
+												</div>
+												<div class="col-md-6 text-right">
+													<button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- modal 19 -->
+							<div class="modal fade modal-img" id="modal_19" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLongTitle">outfit details</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<div class="container-fluid">
+												<div class="row">
+													<div class="col-md-5 img-modal">
+														<img class="img-fluid" src="img/polite-4.jpg">
+													</div>
+													<div class="col-md-7 details">
+														<span class="title-details">&#x2022; You should choose this outfit, because:</span><br>
+														&#x2713; It is a great choice for work, events, holiday ... <br>
+														&#x2713; Season: It is in autumn. <br>
+														&nbsp; &nbsp; &nbsp; &#8658; This style is very suitable. <br>
+														&#x2713; It is also suitable for your physique (height, weight).<br>
+														&#x2713; It is in accordance with your information (your age, your profession, your style).<br>
+														<div class="outfit-items">
+															<span class="title-details">&#x2022; Clothing items: </span><br>
+															<div class="img-items">
+																<img class="img-fluid outfit-item mb-1" src="img/polite-4.1.jpg">
+																<img class="img-fluid outfit-item mb-1" src="img/polite-4.2.jpg">
+																<img class="img-fluid outfit-item mb-1" src="img/polite-4.3.jpg">
+																<img class="img-fluid outfit-item mb-1" src="img/polite-4.4.jpg">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>	
+										</div>
+						
+										<div class="footer">
+											<div class="row">
+												<div id="btn-favorite" class="col-md-6">
+													<div class="container">
+														<svg class="ico" width="24" height="24" viewBox="0 0 24 24" data-placement="right" data-toggle="tooltip"  data-html="true" title="Favorite this !"  id="tooltip">
+															<path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"></path>
+														</svg>
+													</div>
+												</div>
+												<div class="col-md-6 text-right">
+													<button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- modal 20 -->
+							<div class="modal fade modal-img" id="modal_20" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLongTitle">outfit details</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<div class="container-fluid">
+												<div class="row">
+													<div class="col-md-5 img-modal">
+														<img class="img-fluid" src="img/sport-4.jpg">
+													</div>
+													<div class="col-md-7 details">
+														<span class="title-details">&#x2022; You should choose this outfit, because:</span><br>
+														&#x2713; It is a great choice for sports, going out ...<br>
+														&#x2713; Dynamic and healthy style <br>
+														&#x2713; It is also suitable for your physique (height, weight).<br>
+														&#x2713; It is in accordance with your information (your age, your profession, your style).<br>
+														<div class="outfit-items">
+															<span class="title-details"> &#x2022;Clothing items: </span><br>
+															<div class="img-items">
+																<img class="img-fluid outfit-item" src="img/sport-4.1.jpg">
+																<img class="img-fluid outfit-item" src="img/sport-4.2.jpg">
+																<img class="img-fluid outfit-item" src="img/sport-4.3.jpg">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>	
+										</div>
+						
+										<div class="footer">
+											<div class="row">
+												<div id="btn-favorite" class="col-md-6">
+													<div class="container">
+														<svg class="ico" width="24" height="24" viewBox="0 0 24 24" data-placement="right" data-toggle="tooltip"  data-html="true" title="Favorite this !"  id="tooltip">
+															<path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"></path>
+														</svg>
+													</div>
+												</div>
+												<div class="col-md-6 text-right">
+													<button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- them modal tai day -->
+
+						</div> <!-- ket thuc div class modal -->
+
+					<button class="btn-showmore">Show more</button> <!-- button show more -->
+
+				</div> <!-- ket thuc tab suggestion -->
+				
+				<!-- tab favorite -->
+				<div class="tab-pane fade" id="nav-favorite" role="tabpanel" aria-labelledby="nav-favorite-tab">
+					<p class="is-empty">Your favorite is empty.</p>
+					<div class="product">
+					</div>
+					
+					
+				</div> <!-- ket thuc tab favorite -->
+			</div>
+
+			<!-- modal -->
+
+            <!-- modal sign up -->
+        <div class="modal fade" id="sign-up" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header d-block">
+                  <button type="button" class="close float-right" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <h5 class="modal-title text-center" id="ModalLabel">Sign up</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-account" role="tabpanel" aria-labelledby="pills-account-tab">
+                                <form>
+                                    <div class="form-row">
+                                        <div class="col field">
+                                            <input type="text" class="form-control input" id="first-name" placeholder="First name">
+                                            <span class="check-valid hidden">required</span>
+                                        </div>
+                                        <div class="col field">
+                                            <input type="text" class="form-control input" id="last-name" placeholder="Last name">
+                                            <span class="check-valid hidden">required</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group field">
+                                        <input type="email" class="form-control input" placeholder="Email" id="email-signup">
+                                        <span class="check-valid hidden">required</span>
+                                    </div>
+                                    <div class="form-group field">
+                                        <input type="tel" class="form-control input" placeholder="Telephone" id="tel">
+                                        <span class="check-valid hidden">required</span>
+                                    </div>
+                                    <div class="form-group field">
+                                        <div class="input-group " id="show_hide_password">
+                                            <input class="form-control pass input" id="pwd-signup" type="password" placeholder="Password (> 5 characters, numbers and letters)">
+                                            <div class="input-group-addon pass">
+                                                <a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                                            </div>
+                                        </div>
+                                        <span class="check-valid hidden">required</span>
+                                    </div>
+                                    <div class="form-group field">
+                                        <input type="password" class="form-control input" placeholder="Confirm Password" id="pwd-confirm">
+                                        <span class="check-valid hidden">required</span>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="pills-info" role="tabpanel" aria-labelledby="pills-info-tab">
+                                <form>
+                                    <div class="form-group field">
+                                        <input type="text" class="form-control input" placeholder="Your height (m)" id="height">
+                                        <span class="check-valid hidden">required</span>
+                                    </div>
+                                    <div class="form-group field">
+                                        <input type="text" class="form-control input" placeholder="Your weight (kg)" id="weight">
+                                        <span class="check-valid hidden">required</span>
+                                    </div>
+                                    <div class="form-group field">
+                                        <input class="form-control input" placeholder="Your birth" class="textbox-n" type="text" onfocus="(this.type='date')" id="date">
+                                        <span class="check-valid hidden">required</span>
+                                    </div>
+                                    <div class="form-group field">
+                                        <input type="text" class="form-control input" placeholder="Your profession" id="profession">
+                                        <span class="check-valid hidden">required</span>
+                                    </div>
+                                    <div class="form-group  style_select">
+                                        <p class="guide-style">* You can select from the list of suggested styles or enter any style you like.</p>
+                                       <div class="row">
+                                            <div class="col-md-6 no-padding">
+                                                <input type="text" class="form-control input" placeholder="Your favorite style" id="style">
+                                            </div>
+                                            <div class="col-md-6 no-padding fix-select">
+                                                <div class="multi_select_box ">
+                                                    <select name="demo" class="multi_select w-100 input" multiple data-selected-text-format="count > 2" multiple title="List suggested style" data-size="5">
+                                                        <option data-content="<span class='fontsize-select'>Casual style</span>">Casual style</option>
+                                                        <option data-content="<span class='fontsize-select'>Sporty style</span>">Sporty style</option>
+                                                        <option data-content="<span class='fontsize-select'>Street style</span>">Street style</option>
+                                                        <option data-content="<span class='fontsize-select'>Vintage style</span>" >Vintage style</option>
+                                                        <option data-content="<span class='fontsize-select'>Girly style</span>">Girly style</option>
+                                                        <option data-content="<span class='fontsize-select'>Trendy style</span>" >Trendy style</option>
+                                                        <option data-content="<span class='fontsize-select'>Exotic style</span>">Exotic style</option>
+                                                    </select>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                        <span class="check-valid hidden">required</span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex text-center justify-content-center">
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item ">
+                                <a class="nav-link active" id="pills-account-tab" data-toggle="pill" href="#pills-account" role="tab" aria-controls="pills-account" aria-selected="true"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-info-tab" data-toggle="pill" href="#pills-info" role="tab" aria-controls="pills-info" aria-selected="false"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="form-group check">
+                        <div class="form-check">
+                            <input class="form-check-input mt-1" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                                I agree to Terms and Conditions
+                            </label>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center text-center">
+                    <button type="submit" class="btn btn-primary" id="submit">Sign up</button></div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+            <!-- modal sign in -->
+            <div class="modal fade" id="sign-in" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header d-block">
+                    <button type="button" class="close float-right" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h5 class="modal-title text-center" id="ModalLabel">Sign in</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <div class="field">
+                                    <input type="text " class="form-control input" placeholder="Email or Telephone" id="email-tel">
+                                    <span class="check-valid hidden">required</span>
+                                </div>
+                                <div class="field">
+                                    <input type="password" class="form-control input" id="password" placeholder="Password">
+                                    <span class="check-valid hidden">required</span>                                    </div>
+                                </div>
+                        </form>
+                        <div class="signin-check">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                                            <label class="form-check-label" for="gridCheck">
+                                                    Remember me
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="forgot-pass col-6 text-right">
+                                    <a href="#">Forgot your password</a>
+                                   </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center text-center">
+                            <button type="submit" class="btn btn-primary" id="submit">Sign in</button>
+                        </div>
+                        <p class="sub">&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212; Or sign in with &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212; </p>
+                        <div class="d-flex justify-content-center other">
+                            <div class="box facebook text-center">
+                                <img class="img-fluid" src="../Signup-signin/img/facebook-icon.png">
+                                 Facebook
+                            </div>
+                                <div class="box text-center">
+                                <img class="img-fluid" src="../Signup-signin/img/google-icon.png">
+                                Google
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                </div>
+            </div>
+		</div><!-- ket thuc site main -->
+	</div>
+	
+	 <!-- footer -->
+	 <div id="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="../Home_try/home_try_index.html"><img id="footer-logo" src="./img/logo-footer.png"></a>
+                    <div id="footer-slogan">Best clothes for you.</div>
+                </div>
+                <div class="col-md-3"></div>
+                <div class="col-md-3">
+                    <div class="footer-info">
+                        <p class="footer-title">Information</p>
+                        <a href="../About/about_index.html"class="footer-link">About us</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-info">
+                        <p class="footer-title">Contact us</p>
+                        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> University Of Science<br>
+                        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
+                        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script 
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+	crossorigin="anonymous"></script>
+	
+	<!-- bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.js" integrity="sha512-iqhWkvLOXVDz+Lr//ZryEKNvZ5pmgdKEe58Wh/VwfTGwTku0MKbuLhjJ1zUAJu8iSbOqfLcXrrxJ61+27THi2Q==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/bootstrap-select.min.js" integrity="sha512-yDlE7vpGDP7o2eftkCiPZ+yuUyEcaBwoJoIhdXv71KZWugFqEphIS3PU60lEkFaz8RxaVsMpSvQxMBaKVwA5xg==" crossorigin="anonymous"></script>
+	<!-- javascript main -->
+	<script src="./js/script_filter.js"></script>
+	<script src="./js/icon-heart.js"></script>
+	<script src="./js/script.js"></script>
+	<script src="./js/script_signin_signup.js"></script>
+	
+	
+
+	
+	<!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>

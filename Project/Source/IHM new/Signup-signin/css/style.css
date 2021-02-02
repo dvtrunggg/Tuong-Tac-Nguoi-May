@@ -1,0 +1,136 @@
+
+@font-face {
+    font-family: Louis Vuitton;
+    src: url(../font/Louis_Vuitton_Regular.ttf);
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+
+body{
+	font-family: Louis Vuitton !important;
+	margin:0 auto !important;
+	padding:0px !important;
+	width: 100%;
+    max-width: 1480px;
+    max-height: 666px;
+}
+
+.site-menu .navbar {
+    padding: 10px 100px 10px 100px;
+    height: 70px;
+    background-color: black;
+}
+
+.site-menu a.nav-link {
+    color: white!important;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 0px;
+}
+
+.text {
+    font-size: 20px;
+}
+
+.site-menu a.nav-link:hover {
+    border-bottom: 1px solid white;
+    padding-bottom: 0px;
+}
+
+.site-menu .navbar-brand img {
+    filter: invert(100%) sepia(68%) saturate(626%) hue-rotate(274deg) brightness(500%) contrast(100%) drop-shadow(0px 0px 10px white);
+    
+}
+
+.site-menu .navbar-nav .btn {
+    background-color: white !important;
+    color: black;
+    font-weight: bold;
+    font-size: 17px;
+    border: none;
+    outline-color: grey ;
+    box-shadow: 1px 1px 1px #aaaaaa ;
+}
+
+
+.site-menu .nav-item {
+    margin-right: 50px;
+}
+
+.field {
+    margin-bottom: 15px;
+}
+
+.check-valid {
+    font-size: 12px;
+    color:hsla(4, 79%, 47%, 0.849);
+    font-weight: bold;
+}
+
+
+.hidden {
+    visibility: hidden;
+}
+
+.intro-tryit {
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+.no-padding {
+    padding: 0px;
+}
+
+.fix-select {
+    padding: 0px 13px 0px 25px;
+    margin-top: -5px;
+    margin-bottom: 0px;
+   
+
+}
+
+
+
+.bootstrap-select > .dropdown-toggle[title='List suggested style'] {
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 0 !important;
+    padding: 12px 12px;
+    background-color: #f4f4f4;
+}
+
+.bootstrap-select > .dropdown-toggle[title='List suggested style']:focus {
+    border-radius: 0 !important;
+}
+
+.multi_select_box button {
+    height: 47px;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #f4f4f4 !important;
+}
+
+.multi_select_box button:focus {
+    background-color: #f4f4f4 !important;
+}
+
+
+.no-padding input {
+    margin-left: 15px;
+}
+
+.fontsize-select {
+    font-size: 16px;
+}
+
+.guide-style {
+    font-size: 15px;
+    margin-top: -10px;
+    margin-bottom: 5px;
+}

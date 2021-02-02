@@ -1,0 +1,283 @@
+
+@font-face {
+    font-family: Louis Vuitton;
+    src: url(../font/Louis_Vuitton_Regular.ttf);
+}
+
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+
+body {
+    font-family: Louis Vuitton ,Helvetica, Arial, sans-serif;
+    margin:0 auto !important;
+	padding:0px !important;
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+
+/* Site main */
+
+.site-main {
+    padding-top: 30px;
+    width: 100%;
+    max-width: 1480px;
+    max-height: 666px;
+}
+
+/* Side bar */
+.side-bar {
+    font-size: 18px !important;
+    padding-top: 30px;
+}
+
+
+.name-bar {
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+
+.name {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.edit-profile {
+    cursor: pointer;
+}
+
+.edit-profile i {
+    font-weight: 70;
+}
+
+.edit-profile:hover {
+    font-weight: bold;
+}
+
+.nav-link{
+    text-decoration: none;
+    background-color: transparent !important;
+    color: black !important;
+    line-height: 100% !important;   /* cai nay lam cho menu nho lai */
+    padding-top: 9px;
+    padding-bottom: 9px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+a.nav-link:hover {
+   /*text-decoration:underline !important;*/
+   text-decoration: none !important;
+   text-shadow:0px 0px 1px black !important; 
+}
+  
+
+.side-bar .active {
+    background-color: black !important;
+    color: white !important;
+}
+
+.active, .label {
+    font-weight: bold !important;
+}
+
+
+/* content */
+
+#content-side, .info-form {
+    font-weight: normal;
+    font-size: 17px;
+}
+
+.content img{
+    width: 150px;
+    height: auto;
+}
+
+.info {
+    line-height: 40%;
+    padding-top: 10px;
+}
+
+p.icon {
+    font-size: 30px;
+    padding-top: 100px !important;
+}
+
+.icon-inline {
+    display: inline;
+}
+
+#v-pills-settings-tab {
+    margin-left: -5px;
+}
+
+#info-header {
+    margin: 0px 10%;
+    padding:0px;
+}
+
+.menu-info {  
+    padding-top: 35px;
+}
+
+.menu-info .nav {
+    text-align: center;
+}
+
+.menu-info .nav li {
+    margin-right: 40px;
+}
+
+.menu-info .nav-item .active {
+    border-top: 2px solid black !important;
+    border-radius: 0% !important;
+    color: black !important;
+}
+
+
+.info-form .label {
+    margin-left: 65%;
+}
+
+.info-form .field {
+    margin-left: 8%;
+}
+
+#v-pills-userinfo{
+    padding-top: 30px;
+}
+
+/* notification */
+
+.noti-item, .setting-item {
+    font-size: 16px;
+    font-weight: normal;
+    border-top: 1px solid rgb(152, 156, 156);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.setting-item {
+    font-size: 16px;
+    font-weight: normal;
+    border-top: 1px solid rgb(152, 156, 156);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.change:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+
+#v-pills-settings , #v-pills-notifications {
+    padding: 60px 30px !important;
+}
+
+/*list item */
+
+.list-item a {
+    font-size: 14px;
+    font-weight: normal;
+    color: black !important;
+    border: 0.1em solid black !important;
+    border-radius: 0% !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.list-item a:hover {
+    background-color: black !important;
+    color: white !important; 
+}
+
+.info {
+    line-height: 100%;
+}
+
+#text-change {
+    line-height: 40%;
+}
+
+button {
+    background-color: black !important;
+    color: white !important;
+    text-transform: uppercase !important;
+    box-shadow: none !important;
+    outline: none !important;
+    border-color: black !important;
+    border-radius: 0% !important;
+    margin-left: 40% !important;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+/*list item */
+
+.list-item a {
+    font-size: 14px;
+    font-weight: normal;
+    color: black !important;
+    border: 0.1em solid black !important;
+    border-radius: 0% !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.list-item a:hover {
+    background-color: black !important;
+    color: white !important; 
+}
+
+.list-item {
+    margin-top: 40px;
+}
+
+/* favorites */
+#v-pills-favorites {
+    padding: 60px 30px;
+}
+
+
+.favorite-images {
+    font-size: 15px; 
+    font-weight: normal;
+}
+
+.favorite-images .disc {
+   margin: 0 30%;
+   position: relative;
+}
+
+.favorite-images img{
+    width: 100px;
+    height: 160px;
+}
+
+.favorite-images #favorite-title {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.heart {
+	color: #C62828;
+}
+
+.info {
+    line-height: 100%;
+}

@@ -1,0 +1,368 @@
+
+body{
+	font-family: Louis Vuitton !important;
+	overflow-x: hidden;
+  	overflow-y: visible;
+}
+
+#site-main {
+	margin: 55px auto !important;
+	padding:0px !important;
+	width: 100%;
+	max-width: 1480px;
+}
+
+
+/* ------------------ modal announcement ------------ */
+#modal-announce .modal-dialog {
+	position: absolute;
+	top: 100px ;
+	right: 25%;
+	bottom: 0;
+	left: 25%;
+	z-index: 10040;
+	max-width: 540px;
+	overflow: auto;
+	overflow-y: auto;
+}
+
+#modal-announce .modal-dialog .modal-body {
+	font-size: 18px;
+	line-height: 200%;
+}
+
+#modal-announce #modal-announceLabel {
+	font-size: 22px;
+	text-transform: uppercase !important;
+	font-weight: bold !important;
+}
+
+
+
+/* ------------------ search bar ------------------ */
+.searchbar {
+	margin-left: 50px;
+}
+
+#input {
+	font-size: 16px;
+}
+
+
+.example {
+	margin-left: 170px;
+	margin-top: -20px;
+}
+
+
+/* ------------------ menu suggest key words ------------------ */
+
+
+.portfolio-menu-title {
+	font-size: 25px;
+}
+.portfolio-menu{
+	text-align:center;
+}
+
+.portfolio-menu ul li{
+	display:inline-block;
+	margin:0px;
+	list-style:none;
+	cursor:pointer;
+	-webkit-transition:all 03s ease;
+	-moz-transition:all 03s ease;
+	-ms-transition:all 03s ease;
+	-o-transition:all 03s ease;
+	transition:all .3s ease;
+	margin-right: 5px;
+	padding: 5px 0px;
+	width: 90px;
+}
+
+.portfolio-item .item {
+	float:left;
+	padding-top: 30px;
+}
+
+
+.portfolio-menu .btn{
+    color: black !important;
+    background-color: white !important;
+	border: black 1px solid ;
+}
+
+.portfolio-menu .active {
+	background-color:black !important;
+    color: white !important;
+}
+
+.portfolio-menu .active::after { 
+	content: '   \2022';
+}
+
+.portfolio-menu .active::before{ 
+	content: '\2022   ';
+}
+
+.portfolio-menu .btn:hover{
+    background-color:black !important;
+    color: white !important;
+}
+
+/* mdb */
+.portfolio-menu ul li {
+	font-size: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+
+.portfolio-menu .btn {
+	border-radius: 5px;
+}
+
+.portfolio-menu .active::after { 
+	font-size: 15px;
+}
+
+
+.portfolio-menu .nav {
+    margin: 50px 100px;
+}
+
+
+
+/* ------------------ content ------------------ */
+
+/* ------------- tabs ----------- */
+
+/* tabs menu */
+#site-main .nav-tabs{
+	border-bottom: 1px solid black;
+	margin-left: 10%;						/* chinh cai nay de ko bi vo layout . lien quan den tab-content */ 
+	margin-right: 10%;
+	margin-bottom: 0px;
+}
+
+#site-main .nav-tabs .nav-item:hover {
+	border-top: 1px solid black;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black
+}
+
+#site-main .nav-tabs .active{
+	border-top: 1px solid black;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+	border-bottom: white !important;
+}
+
+#site-main .nav-link {
+	color: black !important;
+}
+
+a.active {
+	color: black !important;
+	font-weight: bold;
+}
+
+.heart {
+	color: #C62828;
+}
+
+/* tabs content */
+.content {
+	margin-left: 10%;							/*chinh cho nay de khong bi vo layout*/
+	margin-right: 10%;
+	margin-top: 0px;
+	margin-bottom: 100px;
+
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 0px;
+	padding-right: 0px;
+
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+
+.content  img {
+    height: 300px;
+	width: 165px;
+}
+
+.img-modal img{
+	height: 400px;
+	width: auto;
+}
+
+.content .item-img {
+	cursor: pointer;
+}
+
+
+/* ----------- modal ------------- */
+.content .modal-dialog {
+	max-width: 55% !important;
+}
+
+.content h5.modal-title {
+	font-size: 25px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-left: 14px;
+}
+
+.content .modal-content {
+	padding-left: 25px;
+	padding-right: 10px;
+}
+
+.content .modal-header {
+	border-bottom: 1px solid black !important; 
+}
+
+.content .modal-body {
+	margin-top: 10px;
+	border-bottom: 1px solid white !important;
+}
+
+.img-items {
+	margin-top: 10px;
+}
+
+.img-items img {
+	height: 95px;
+	width: 100px;
+}
+
+.footer {
+	padding-bottom: 20px;
+}
+
+
+.title-details {
+	font-weight: bold;
+	font-size: 17px;
+}
+
+
+.details {
+	line-height: 155%;
+	font-size: 16px;
+}
+
+.outfit-items {
+	margin-top: 12px;
+}
+
+button.btn-close {
+	background-color: white !important;
+	color: black !important;
+	font-weight: bold;
+	border: 1px solid black !important;
+	padding: 10px 20px;
+	margin-right: 20px;
+}
+
+button.btn-close:hover {
+	background-color: black !important;
+	color: white !important;
+}
+
+.product {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;					/* chinh cho nay de khong bi vo layout */
+	max-width: 1000px;
+	padding: 0 auto;
+}
+  
+.product .itemBox {
+	position: relative;
+	width: 200px;
+	height: 300px;
+}
+
+.btn-showmore {
+	margin-left: 45%;
+	margin-top: 40px;
+	background-color: white;
+	font-size: 18px;
+}
+
+.btn-showmore:hover {
+	background-color: black;
+	color: white;
+	border-color: black;
+}
+
+
+/* overplay in images */
+  .img-container {
+	position: relative;
+	/*width: 50%;
+	max-width: 300px;*/
+  }
+  
+  .image {
+	display: block;
+	height: auto;
+  }
+  
+  .overlay {
+	position: absolute;
+	bottom: 0; 
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.5); /* Black see-through */
+	color: #f1f1f1; 
+	width: 165px;
+	transition: .5s ease;
+	opacity:0;
+	color: white;
+	font-size: 15px;
+	padding: 20px;
+	text-align: center;
+  }
+  
+  .container:hover .overlay {
+	opacity: 1;
+  }
+
+
+
+/* search in javascript */
+.append{
+    max-width: 100%;
+    transform: scale(0);
+    transition: 0.3s;
+  }
+  
+  .animate{
+    transform: scale(1);
+  }
+
+  #list-2 {
+	overflow-x: hidden;
+	overflow-y: visible;
+  }
+
+.searchBar {
+    border-radius: 0;
+    border-bottom: .1em solid rgb(63, 61, 61) !important;
+}
+
+.searchBar:focus {
+    box-shadow: 0 1px 1px rgba(92, 91, 91, 0.075) inset, 0 0 8px rgba(117, 119, 117, 0.6) !important;
+	outline: 0 none !important;
+}
+
+.is-empty {
+	font-size: 20px;
+	text-align: center;
+}
+

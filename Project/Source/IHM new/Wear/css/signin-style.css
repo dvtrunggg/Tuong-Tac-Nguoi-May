@@ -1,0 +1,89 @@
+
+body {
+    font-family: Louis Vuitton ,Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+
+
+/* sign in */
+
+#sign-in input, #sign-up input {
+    background-color: #f4f4f4 !important;
+    border-color: white !important;
+    border-radius: 0% !important;
+    padding: 23px 10px !important;
+    outline: none !important;
+    margin-bottom: 0px !important;
+}
+
+#sign-in input:focus, #sign-up input:focus {
+    outline: none !important;
+    border: 2px solid black !important;
+    box-shadow: none !important;
+}
+
+#sign-in input::placeholder, #sign-up input::placeholder {
+    color: #aca6ab !important;
+    font-weight: 650 !important;
+    text-transform: uppercase !important;
+}
+
+#sign-in button {
+    font-size: 16px;
+}
+
+
+.forgot-pass a {
+    color: black;
+}
+
+
+.sub {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 0px;
+    font-weight: bold;
+}
+
+
+.other {
+    padding-left: 20px;
+}
+
+.box{
+    display: inline-block;
+    width: 140px;
+    margin-right: 20px;
+    padding: 10px 0px;
+    font-weight: bold;
+    background-color: #f4f4f4;
+    cursor: pointer;
+}
+
+.box img {
+    width: 30px;
+    height: auto;
+}
+
+/* -------------------------- */
+.field {
+    margin-bottom: 15px;
+}
+
+.check-valid {
+    font-size: 12px;
+    color:hsla(4, 79%, 47%, 0.849);
+    font-weight: bold;
+}
+
+
+.hidden {
+    visibility: hidden;
+}
+
+.intro-tryit {
+    font-weight: bold;
+    text-align: center;
+}

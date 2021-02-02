@@ -1,0 +1,227 @@
+@import url(//db.onlinewebfonts.com/c/64c0284f1ada1cf79ec484ac28eee170?family=Louis+Vuitton);
+body {
+  font-family: Louis Vuitton ,Helvetica, Arial, sans-serif;
+}
+
+.container-fluid {
+  margin: 0;
+  padding:0;
+  display: grid;
+  grid-template-rows: 11em auto auto;
+  grid-template-areas: 
+  "main-item1"
+  "search-bar"
+  "main-content";
+}
+
+#main-item1
+{
+    width: 100%;
+    height: 154px;
+    background-color: white;
+    position: fixed;
+    z-index: 2;
+}
+
+#item1 
+{
+    grid-area: item1;
+    z-index: 2;
+}
+
+#icon-call 
+{
+    position: absolute;
+    left: 2%;
+    top: 5.5%;
+}
+
+#phone {
+    position: absolute;
+    left: 3.7%;
+    top: 1%;
+}
+
+#icon-mail {
+    position: absolute;
+    top: 5.5%;
+    left: 18%;
+}
+
+#mail
+{
+    position: absolute;
+    top: 1%;
+    left: 20%;
+}
+
+#icon-mess
+{
+    position: absolute;
+    top: 5.5%;
+    left: 80%;
+}
+
+#icon-account
+{
+    position: absolute;
+    top: 5.5%;
+    left: 87%;
+}
+
+#acc-name
+{
+    position: absolute;
+    top: 1%;
+    left: 83%;
+}
+
+#acc-menu {
+    width: 10%;
+    height: 20%;
+    z-index: 4;
+}
+
+#mui-ten {
+    position: absolute;
+    top: 5.5%;
+    left: 88.6%;
+}
+
+
+
+#account {
+    height: 2.3em;
+    background-color: rgb(245, 245, 245);
+    line-height: 2em;
+    width: 100%;
+    justify-content: right;
+}
+
+#head {
+    font-size: 2.4em;
+    text-align: center;
+    height: 1.5;
+    line-height: 1.5em;
+    font-weight: bold;
+}
+
+#nav_menu {
+    width: 100%;
+    font-size: 18px;
+}
+
+a:hover {
+    color: #B8B8B8;
+    text-decoration: none;
+} 
+
+.nav-link {
+    color: black !important;
+}
+
+.nav .nav-link:hover {
+    text-decoration: none !important;
+    text-shadow:0px 0px 1px black !important; 
+}
+
+.main-content {
+  grid-area: main-content;
+  height: 700px;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-areas: "images info";
+
+}
+ 
+/* Slideshow container */
+.slideshow-container {
+  grid-area: images;
+  width: 500px;
+  height: 559px;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+  text-align: right;
+  position: relative;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: 60px;
+  height: 60px;
+  padding: 12px;
+  color: gray;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+  transition: 0.6s ease;
+  border-radius: 50%;
+  user-select: none;
+  background-color: rgb(242, 242, 242);
+}
+
+.next {
+  right: 45%;
+  border-radius: 50%;
+}
+
+.prev:hover, .next:hover {
+  background-color: lightgray;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-fill-mode: forwards; 
+  animation-name: fade;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards; 
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.info {
+  grid-area: info;
+  width: 400px;
+  height: 559px;
+  margin: auto;
+}
+
+.title {
+  color: black;
+  text-align: center;
+  font-size: 24px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.size-button {
+  background-color: white;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: navy;
+  font-weight: 600;
+  text-decoration: none;
+}

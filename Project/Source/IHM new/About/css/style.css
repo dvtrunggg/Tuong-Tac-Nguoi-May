@@ -1,0 +1,99 @@
+
+@font-face {
+    font-family: Louis Vuitton;
+    src: url(../font/Louis_Vuitton_Regular.ttf);
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+
+
+body,h1,h2,h3,h4,h5,h6 {
+    font-family: Louis Vuitton ,Helvetica, Arial, sans-serif;
+    margin:0 auto !important;
+	padding:0px !important;
+	width: 100%;
+    max-width: 1480px;
+    max-height: 666px;
+}
+
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+  
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("/w3images/mac.jpg");
+    min-height: 100%;
+}
+  
+.w3-bar .w3-button {
+    padding: 16px;
+}
+
+/* ------------------------------------------ */
+.box{
+    margin-top: 0 !important;
+}
+
+.font{
+    font-size: 1.5em;
+}
+.big{
+    font-size: 3.5em;
+}
+
+.abc{
+    padding-top: 30px;
+}
+.abc2{
+    padding-top: 75px;
+    padding-left: 35px;
+}
+.space{
+    margin-top: 30px;
+}
+.line{
+    margin:  0;
+    border-top: 2px solid #b6b4b4;
+}
+
+.mapsp{
+    font-size: 1.3em;
+    padding-top: 30px;
+}
+.test{
+    margin-left: 300px !important;
+}
+.menu{
+    font-size: 1.9em;
+    font-weight: bold;
+    border: 3px solid rgb(36, 35, 35) !important;
+
+}
+.space2{
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+/* ---------------- */
+#btn-sign {
+    margin: 10px 40px;
+    font-size: 18px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+#btn-sign:hover {
+    background-color: black;
+    color: white;
+}
+

@@ -1,0 +1,207 @@
+@import url(//db.onlinewebfonts.com/c/64c0284f1ada1cf79ec484ac28eee170?family=Louis+Vuitton);
+body {
+  font-family: Louis Vuitton ,Helvetica, Arial, sans-serif;
+}
+
+
+
+#item1 
+{
+    grid-area: item1;
+    z-index: 2;
+}
+
+#icon-call 
+{
+    position: absolute;
+    left: 2%;
+    top: 5.5%;
+}
+
+#phone {
+    position: absolute;
+    left: 3.7%;
+    top: 1%;
+}
+
+#icon-mail {
+    position: absolute;
+    top: 5.5%;
+    left: 18%;
+}
+
+#mail
+{
+    position: absolute;
+    top: 1%;
+    left: 20%;
+}
+
+#icon-mess
+{
+    position: absolute;
+    top: 5.5%;
+    left: 80%;
+}
+
+#icon-account
+{
+    position: absolute;
+    top: 5.5%;
+    left: 87%;
+}
+
+#acc-name
+{
+    position: absolute;
+    top: 1%;
+    left: 83%;
+}
+
+#acc-menu {
+    width: 10%;
+    height: 20%;
+    z-index: 4;
+}
+
+#mui-ten {
+    position: absolute;
+    top: 5.5%;
+    left: 88.6%;
+}
+
+#account {
+    height: 2em;
+    background-color: rgb(245, 245, 245);
+    line-height: 2em;
+    width: 100%;
+    justify-content: right;
+}
+
+#head {
+    font-size: 2.4em;
+    text-align: center;
+    height: 1.5;
+    line-height: 1.5em;
+    font-weight: bold;
+}
+
+#nav_menu {
+    width: 100%;
+    font-size: 18px;
+}
+
+a:hover {
+    color: #B8B8B8;
+    text-decoration: none;
+} 
+
+.nav-link {
+    color: black !important;
+}
+
+.nav .nav-link:hover {
+    text-decoration: none !important;
+    text-shadow:0px 0px 1px black !important; 
+}
+
+.nav .active {
+    text-decoration: none !important;
+    text-shadow:0px 0px 1px black !important; 
+ }
+
+.main-content {
+  grid-area: main-content;
+  z-index: 1;
+}
+
+.search-bar {
+  grid-area: search-bar;
+  margin: 50px;
+}
+
+.active-cyan input.form-control[type=text] {
+  border-bottom: 1px solid #4dd0e1;
+  box-shadow: 0 1px 0 0 #4dd0e1;
+}
+
+.active-cyan .fa, .active-cyan-2 .fa {
+  color: #4dd0e1;
+}
+
+.shopping {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.card-text {
+  color: black;
+  font-size: 14px;
+}
+
+.card-text a:link {
+  color: black;
+}
+
+.card-text a:visited {
+  color: black;
+}
+
+.card-text a:hover {
+  color: #0070c9;
+}
+
+.card-text a:link {
+  text-decoration: none;
+}
+
+.hot-search {
+  text-align: center;
+  padding: 2%;
+}
+
+.search-button {
+  border: none;
+  background-color: white;
+}
+
+a:hover {
+  color: black;
+  text-decoration: none;
+} 
+
+#searchBar {
+  width: 700px; 
+  border-top: none; 
+  border-right: none; 
+  border-left: none;
+}
+
+#icon-search {
+  padding-top: 10px;
+}
+
+
+
+.color {
+  color: black;
+  background-color: white !important;
+  border: black solid 1px;
+}
+
+.color:hover {
+  color: white;
+  background-color: black !important;
+  
+}

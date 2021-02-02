@@ -1,0 +1,215 @@
+@font-face {
+    font-family: Louis Vuitton;
+    src: url(../font/Louis_Vuitton_Regular.ttf);
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+body{
+	font-family: Louis Vuitton !important;
+	margin:0 auto !important;
+	padding:0px !important;
+	width: 100%;
+    max-width: 1480px;
+    max-height: 666px;
+}
+
+#header .nav-link {
+    text-decoration: none;
+    background-color: transparent !important;
+    color: black !important;
+    line-height: 100% !important;   /* cai nay lam cho menu nho lai */
+    padding-top: 9px;
+    padding-bottom: 9px;
+    margin-top: 0px;
+}
+
+#container {
+    margin: 0;
+    padding: 0;
+    left:0;
+    width: 100%;
+
+    /*  */
+    min-height: 2000px;
+    /*  */
+    background-color: white;
+    position: relative;
+}
+
+#header {
+    width: 100%;
+    min-height: 199px;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: relative;
+    height: 177px;
+}
+
+#account {
+    width: 100%;
+    height: 2em;
+    background-color: rgb(245, 245, 245);
+    line-height: 2em;
+    font-size: 1.2vw;
+}
+
+#header .row{
+    border:0px;
+    margin-right:0;
+    margin-left:0;
+    max-width:100%; 
+}
+
+#logo {
+    width: 100%;
+    height: 115px;
+    position: relative;
+    text-align: center;
+}
+
+#img-logo {
+    height: 100px;
+    margin-top: 10px;
+}
+
+#nav_menu {
+    width: 100%;
+    text-transform: uppercase;
+}
+
+#nav_menu a:hover {
+    color: #B8B8B8;
+    text-decoration: none;
+}
+
+.nav-link {
+    color: black !important;
+}
+
+.nav .nav-link:hover {
+    text-decoration: none !important;
+    text-shadow:0px 0px 1px black !important; 
+}
+
+.nav .active {
+    text-decoration: none !important;
+    text-shadow:0px 0px 1px black !important; 
+}
+
+#header svg {
+    padding-bottom: 3px;
+}
+
+.js-icon {
+    color: black;
+}
+
+.js-icon:hover {
+    color:#8B8B83;
+    text-decoration: none;
+}
+
+#js-visited:visited {
+    background-color: rgb(245, 245, 245);
+}
+
+/*------content-----*/
+
+#content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    
+    min-height: 300px;
+    /*  */
+    background-color: white;
+    position: relative;
+}
+
+
+.nav-infor {
+    width: 100%;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+#header .nav-tabs {
+    border-bottom: 1px solid black;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+#header .nav-tabs .nav-item:hover {
+	border-top: 1px solid black;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#header .nav-tabs .active{
+	border-top: 1px solid black;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+    border-bottom: 1px solid black !important;
+    background-color: black !important;
+    color: white !important;
+}
+
+#header #nav_menu .nav .active::after { 
+	content: '   \2022';
+}
+
+#header #nav_menu .nav .active::before{ 
+	content: '\2022   ';
+}
+
+#user-name {
+    font-size: 18px !important;
+}
+
+
+
+
+/* ------------------ modal announcement ------------ */
+
+#modal-announce .modal-dialog {
+	position: absolute;
+	top: 100px ;
+	right: 25%;
+	bottom: 0;
+	left: 25%;
+	z-index: 10040;
+	max-width: 540px;
+	overflow: auto;
+	overflow-y: auto;
+}
+
+#modal-announce .modal-dialog .modal-body {
+	font-size: 18px;
+	line-height: 200%;
+}
+
+#modal-announce .modal-dialog .modal-header .modal-title{
+    font-weight:bold !important;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+
+.no-padding {
+    padding:0px;
+}
+
+.text-muted {
+    color: rgb(173, 173, 173) !important;
+}
+

@@ -1,0 +1,142 @@
+
+
+.team{
+    padding: 100px 0px;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.team_top h1{
+    text-transform: uppercase;
+    color: #bb8c45;
+    font-size: 60px;
+    font-weight: 700;
+    font-family: 'Rum Raisin', sans-serif;
+}
+.team_top p{
+    font-size: 18px;
+    font-weight: 500;
+    max-width: 750px;
+    margin: 0 auto;
+}
+.member{
+    position: relative;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    background-color: #fff;
+    padding: 20px;
+}
+.img img{
+    width: 130px;
+    border-radius: 50%;
+}
+.m_text h3{
+    font-weight: 800;
+    font-size: 22px;
+    margin-top: 20px;
+    color: #bb8c45;
+    font-family: 'Roboto Slab', serif;
+}
+.m_text h5{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.m_text p{
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+}
+.m_menu{
+    margin: 0;
+    padding: 0;
+    position: absolute; 
+    left: 0;
+    right: 0;
+    bottom: -35px;
+    background: #fff;
+    padding: 10px;
+    opacity: 0;
+}
+.m_menu ul{
+    margin-bottom: 0px;
+}
+.m_menu ul li a i{
+    color: #bb8c45;
+}
+.m_menu ul li a{
+    display: block;
+    padding: 7px;
+    font-size: 18px;
+}
+.member:hover .m_menu{
+    opacity: 1;
+    bottom: -40px;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+}
+.member:hover .m_text h3{
+    color: #bb8c45;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+}
+
+
+.site-logo img{
+    width: 20%;
+    height: auto;
+}
+
+/*navbar*/
+.site-navbar {
+    margin-bottom: 5px;
+    z-index: 1999;
+    width: 100%;
+    background: #fff;
+    font-weight: bold;
+    font-family: 'Arima Madurai', cursive;
+  }
+  
+  .site-navbar .site-navigation .site-menu {
+      margin-left: 0;
+      padding-left: 0;
+      margin-bottom: 0; 
+      border-top-color: #bb8c45 !important;
+      border-top: 1px solid;
+      border-top-width: 2px;
+      text-align: center;
+      border-bottom-color: #bb8c45 !important;
+      border-bottom: 1px solid;
+      border-bottom-width: 2px;
+  }
+  
+  .site-navbar .site-navigation .site-menu .active > a {
+      color: #783F27;
+      display: inline-block;
+      padding-left: 10px;
+      padding-right: 10px; 
+  }
+  
+  .site-navbar .site-navigation .site-menu a {
+      text-decoration: none !important;
+      display: inline-block; 
+  }
+  
+  .site-navbar .site-navigation .site-menu > li {
+      display: inline-block; 
+  }
+  
+  .site-navbar .site-navigation .site-menu > li > a {
+      text-transform: uppercase;
+      font-size: 20px;
+      letter-spacing: .05rem;
+      font-weight: 400;
+      display: inline-block;
+      text-decoration: none !important;
+      color: #000; 
+  }
+        

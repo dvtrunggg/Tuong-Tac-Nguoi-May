@@ -1,0 +1,123 @@
+.site-logo img{
+    width: 20%;
+    height: auto;
+}
+
+.carousel-indicators .active{
+    background-color:#bb8c45;
+}
+
+.carousel-inner img {
+    width: 100%;
+}
+
+
+.heading-section p{
+    font-size: 300%;
+    font-family: 'Rum Raisin', sans-serif;
+    color: #bb8c45;
+}
+
+.content{
+    font-family: 'Antic', sans-serif;
+    color: 	#292929;
+    font-size: 20px;
+}
+
+.note{
+    color: #bb8c45;
+    font-size: x-large;
+}
+
+.name_web{
+    color: #bb8c45;
+    font-weight: bold;
+}
+
+.content a{
+    font-size: 20px;
+    font-family: 'Lancelot', sans-serif;
+    color: #bb8c45;
+}
+
+
+/*Button*/
+.container .btn {
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #fff;
+    color: black;
+    font-size: 16px;
+    padding: 15px 15px;
+    border: none;
+    cursor: pointer;
+    border-style: solid;
+    margin-left: 50px;
+  }
+  
+.container .btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.content_button{
+    font-size: 15px;
+    font-family: "Arima Madurai";
+    font-weight: bold;
+}
+
+.site-logo img{
+    width: 20%;
+    height: auto;
+}
+
+/*navbar*/
+.site-navbar {
+  margin-bottom: 5px;
+  z-index: 1999;
+  width: 100%;
+  background: #fff;
+  font-weight: bold;
+  font-family: 'Arima Madurai', cursive;
+}
+
+.site-navbar .site-navigation .site-menu {
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 0; 
+    border-top-color: #bb8c45 !important;
+    border-top: 1px solid;
+    border-top-width: 2px;
+    text-align: center;
+    border-bottom-color: #bb8c45 !important;
+    border-bottom: 1px solid;
+    border-bottom-width: 2px;
+}
+
+.site-navbar .site-navigation .site-menu .active > a {
+    color: #783F27;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px; 
+}
+
+.site-navbar .site-navigation .site-menu a {
+    text-decoration: none !important;
+    display: inline-block; 
+}
+
+.site-navbar .site-navigation .site-menu > li {
+    display: inline-block; 
+}
+
+.site-navbar .site-navigation .site-menu > li > a {
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: .05rem;
+    font-weight: 400;
+    display: inline-block;
+    text-decoration: none !important;
+    color: #000; 
+}
+      
+

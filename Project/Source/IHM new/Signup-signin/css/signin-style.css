@@ -1,0 +1,156 @@
+body {
+    font-family: Louis Vuitton ,Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+
+/* site-side */
+
+.site-main{
+    background-color: #e9e9e9;
+}
+
+.button {
+    width: 200px;
+}
+
+.title-side{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 30px;
+    line-height: 50%;
+}
+
+.details {
+    font-size: 20px;
+    margin: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
+    line-height: 120%;
+}
+
+.login {
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid black;
+    padding: 10px 0px;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    width: 200px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.login:hover {
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+.site-side :hover {
+    text-decoration: none;
+}
+
+
+.site-side{
+    background-image: url(../img/fashion2.jpg);
+    background-size: 100%;
+    text-align: center;
+    height: 596px;
+}
+
+/* sign in */
+
+.sign-in {
+    background-color: white;
+    margin: 40px 40px 40px 40px;
+    padding: 30px 30px 30px 30px;
+}
+
+
+.intro {
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+
+input {
+    background-color: #f4f4f4 !important;
+    border-color: white !important;
+    border-radius: 0% !important;
+    padding: 23px 10px !important;
+    outline: none !important;
+    margin-bottom: 0px !important;
+    margin-top: -5px !important;
+}
+
+input:focus {
+    outline: none !important;
+    border: 2px solid black !important;
+    box-shadow: none !important;
+}
+
+
+
+input::placeholder {
+    color: #aca6ab !important;
+    font-weight: 650 !important;
+    text-transform: uppercase !important;
+}
+
+.sign-in button {
+    background-color: black !important;
+    color: white !important;
+    font-weight: bold;
+    text-transform: uppercase !important;
+    box-shadow: none !important;
+    outline: none !important;
+    border-color: black !important;
+    border-radius: 0% !important;
+    margin-top:10px;
+    width: 300px;
+}
+
+.signin-check {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: -10px;
+}
+
+
+
+.forgot-pass a {
+    color: black;
+}
+
+
+.sub {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 0px;
+    font-weight: bold;
+}
+
+.other {
+    margin-left: 22px;
+}
+
+ .box{
+    display: inline-block;
+    width: 140px;
+    margin-right: 20px;
+    padding: 10px 0px;
+    font-weight: bold;
+    background-color: #f4f4f4;
+    cursor: pointer;
+}
+
+.box img {
+    width: 30px;
+    height: auto;
+}
+

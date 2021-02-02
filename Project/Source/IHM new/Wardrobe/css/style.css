@@ -1,0 +1,293 @@
+
+@font-face {
+    font-family: Louis Vuitton;
+    src: url(../font/Louis_Vuitton_Regular.ttf);
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: Louis Vuitton ,Helvetica, Arial, sans-serif;
+}
+
+#container {
+    padding-left: 210px;
+    position: relative;
+    padding-top: 220px;
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+    min-height: 700px;
+}
+
+
+/*---------------------------------------------------------------*/
+
+#bar-menu {
+    position: fixed;
+    height: 100%;
+    width: 200px;
+    
+    left: 0;
+    top: 220px;
+
+    text-align: center;
+
+    background-color: white;
+    border: 1px solid #DDDDDD;
+    border-radius: 0 0.6em 0 0;
+}
+
+
+#bar-menu > div {
+    margin: 0 auto;
+    margin-top: 42px;
+    width: 170px;
+}
+
+#bar-menu input {
+    padding: 0;
+    margin-left: 24px;
+    text-align: center;
+}
+
+#find {
+    margin: 2em auto 1em auto;
+    font-weight: 500;
+}
+
+#bar-menu .active {
+    background-color: black !important;
+    color: white !important;
+}
+
+/*---------------------------------------------------------------*/
+#header {
+    position: fixed;
+    width: 100%;
+    height: 185px;
+    background-color: white;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#account {
+    width: 100%;
+    height: 2em;
+    background-color: rgb(245, 245, 245);
+    line-height: 2em;
+    font-size: 1.2vw;
+}
+
+#logo {
+    width: 100%;
+    height: 115px;
+    position: relative;
+    text-align: center;
+}
+
+#img-logo {
+    height: 100px;
+    margin-top: 10px;
+}
+
+#nav_menu {
+    width: 100%;
+    text-transform: uppercase;
+}
+
+#nav_menu a:hover {
+    color: #B8B8B8;
+    text-decoration: none;
+}
+
+.nav-link {
+    color: black !important;
+}
+
+.nav .nav-link:hover {
+    text-decoration: none !important;
+    text-shadow:0px 0px 1px black !important; 
+}
+
+.nav .active {
+    text-decoration: none !important;
+    text-shadow:0px 0px 1px black !important; 
+}
+
+#header svg {
+    padding-bottom: 3px;
+}
+
+.js-icon {
+    color: black;
+}
+
+.js-icon:hover {
+    color:#8B8B83;
+    text-decoration: none;
+}
+
+#js-visited:visited {
+    background-color: rgb(245, 245, 245);
+}
+
+/*---------------------------------------------------------------*/
+
+#content > div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#content > div > div{
+    margin: 0 auto 2% auto;
+}
+
+#main-button {
+    position: fixed;
+    top: 92%;
+    left: 94%;
+    border-radius: 5px;
+}
+
+/* add item */
+/*-------- modal --*/
+
+/* #modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+} */
+
+/* #modal_overlay 
+{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    
+}
+
+#modal_body {
+    width: 500px;
+    height: 635px;
+    background-color: white;
+    margin: auto;
+    position: relative;
+    border-radius: 5px;
+    display: float;
+} */
+
+#add-img { /**/
+    width: 60%;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.modal-body > #avatar { /**/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #777777;
+    border-radius: 4px;
+}
+
+#icon-camera { /**/
+    width: 7%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+}
+
+#level-form { /**/
+    text-align: center;
+    border: 1px solid #777777;
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+}
+
+#item-name { 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+.row{
+    border:0px;
+    margin-right:0;
+    margin-left:0;
+    max-width:100%; 
+}
+
+
+
+
+#header .nav-link {
+    text-decoration: none;
+    background-color: transparent !important;
+    color: black !important;
+    line-height: 100% !important;   /* cai nay lam cho menu nho lai */
+    padding-top: 9px;
+    padding-bottom: 9px;
+    margin-top: 0px;
+}
+
+#header .nav-tabs {
+    border-bottom: 1px solid black;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+#header .nav-tabs .nav-item:hover {
+	border-top: 1px solid black;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#header .nav-tabs .active{
+	border-top: 1px solid black;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+    border-bottom: 1px solid black !important;
+    background-color: black !important;
+    color: white !important;
+}
+
+#header #nav_menu .nav .active::after { 
+	content: '   \2022';
+}
+
+#header #nav_menu .nav .active::before{ 
+	content: '\2022   ';
+}
+
+#user-name {
+    font-size: 1.5vw !important;
+}
+
+.no-padding {
+    padding: 0px;
+}

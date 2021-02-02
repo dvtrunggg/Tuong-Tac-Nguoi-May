@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MonStyle | Try it free | Home</title>
+
+    <!--link font chu-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+
+
+    <!-- css boostrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.css" integrity="sha512-6g9IGCc67eh+xK03Z8ILcnKLbJnKBW+qpEdoUVD/4hBa2Ghiq5dQgeNOGWJfGoe9tdCRM4GpJMnsRXa2FDJp9Q==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/css/bootstrap-select.min.css" integrity="sha512-ARJR74swou2y0Q2V9k0GbzQ/5vJ2RBSoCWokg4zkfM29Fb3vZEQyv0iWBMW/yvKgyHSR/7D64pFMmU8nYmbRkg==" crossorigin="anonymous" />
+
+    <!-- link css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/signup-style.css">
+    <link rel="stylesheet" href="./css/signin-style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+
+    <!-- footer -->
+    <link rel="stylesheet" href="./css/footer-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <!-- modal announcement -->
+	<div class="modal fade" id="modal-announce" tabindex="-1" role="dialog" aria-labelledby="modal-announceLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header d-block">
+                    <button type="button" class="close float-right" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <h5 class="modal-title text-center" id="modal-announceLabel">Try it free version</h5>
+                    
+                </div>
+                <div class="modal-body text-center">
+                    This is a trial version, so it will limit some functions.<br>
+                    Please sign in or sign up to experience this application in the best way.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+		</div>
+    </div>
+    
+    <div id="container">
+    <!---------container----------->
+
+        <div id="header">
+            <div id='account'>
+                <div class="row">
+                    <div class="col-md-1 col-sm-1"></div>
+                    <div class="col-md-2 col-sm-2 no-padding">
+                        <svg width="0.94em" height="0.94em" viewBox="0 0 16 16" class="bi bi-telephone-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z"/>
+                        </svg>
+                        <span> Call us : (028) 3835 4266</span>
+                    </div>
+
+                    <div class="col-md-4 col-sm-3 no-padding">
+                        <svg width="1.05em" height="1.05em" viewBox="0 0 16 16" class="bi bi-envelope-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+                        </svg>
+                        <span id="mail"> E-mail : info@fit.hcmus.edu.vn</span>
+                    </div>
+                    
+                    
+                    <div class="col-md-2 pl-5 col-sm-3 no-padding">
+                        <a class="js-icon" href="../index.html">
+                            <i class="fa fa-power-off" style="font-size:0.96em"></i>
+                            <span>Turn off trial mode</span>
+                        </a>
+                    </div>
+				
+                    
+                    <div class="col-md-1 col-sm-1 no-padding">
+                        <a class="js-icon" href="#" data-toggle="modal" data-target="#sign-in">
+                            <i style="font-size: 0.96em;" class="fas fa-sign-in-alt"></i>
+                            <span >Sign In</span>
+                        </a>
+                    </div>
+                    
+                    <div class="col-md-1 col-sm-1 no-padding">
+                        <a class="js-icon" href="#"  data-toggle="modal" data-target="#sign-up">
+                            <i style="font-size: 0.8em;" class="fas fa-user-plus"></i>
+                                <span>Sign Up</span>
+                        </a> 
+					</div>
+                    
+                    <div class="col-md-1 col-sm-1 no-padding"></div>
+                </div>
+            </div>
+
+            <div id='logo'>
+                <a href="../Home_try/home_try_index.html"><img id='img-logo' src="./img/logo-1.png"></a>
+            </div>
+            
+            <nav id="nav_menu">
+                <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="nav-home-tab" href="../Home_try/home_try_index.html" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+                    <a class="nav-item nav-link" id="nav-profile-tab" href="../Wear/wear_try_index.html" role="tab" aria-controls="nav-profile" aria-selected="false">What-to-wear Today</a>
+                    <a class="nav-item nav-link" id="nav-contact-tab" href="../Shopping/shopping-index-trial.html" role="tab" aria-controls="nav-contact" aria-selected="false">Shopping</a>
+                    <a class="nav-item nav-link" id="nav-contact-tab" href="../Wardrobe_try/wardrobe_try_index.html" role="tab" aria-controls="nav-contact" aria-selected="false">Wardrobe</a>
+                </div>
+            </nav>
+
+        </div>
+
+
+        <div id='content'>
+            <div class='nav-infor'>
+                <div class="collapse" id="navbarToggleExternalContent">
+                  <div class="bg-dark p-4" style="text-align: center;">
+                    <h5 class="text-white h4">Weather</h5>
+                    <span class="text-muted">Temperature: 25 degrees C | 77 degrees F</span></br>
+                    <span class="text-muted">The likelihood of rain: 65%</span></br>
+                    <span class="text-muted">Humidity: 76%</span></br>
+                    <span class="text-muted">Wind speeds: 5km/h</span>
+                  </div>
+
+                  <div class="bg-dark p-4" style="text-align: center;">
+                    <h5 class="text-white h4">Warnings</h5>
+                    <span class="text-muted">You should restrict the number of times going out due to the pandemic coronavirus</span>
+                  </div>
+
+                  <div class="bg-dark p-4" style="text-align: center;">
+                    <h5 class="text-white h4">Essential items for going out</h5>
+                    <span class="text-muted">Face masks are essential items during the COVID-19 epidemic</span></br>
+                    <span class="text-muted">You should bring an umbrella and should not wear white shoes in case it rains</span>
+                  </div>
+                  
+                  <div class="bg-dark p-4" style="text-align: center;">
+                    <h5 class="text-white h4">Suggestion for today's outfits</h5>
+                    <span class="text-muted">Waterproof clothing</span><br/>
+                    <span class="text-muted">Fall-Winter outfit</span>
+                  </div>
+                </div>
+                
+                <nav class="navbar-dark dark" style="background-color: #222222;padding: 5px; margin: 0;">
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <p style="color:#DDDDDD; text-align: center;line-height: 40px; margin: 0; font-size: 23px;">TODAY LATEST NEWS</p>
+                        </div>
+                        
+                        <div class="col-md-6"></div>
+
+                        <div class="col-md-2">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
+
+            <!---item-->
+
+            
+
+            <div class="row" style='background-color: #EEEEEE;'>
+                
+                <h3 style="display: block; margin-left: auto; margin-right: auto; padding-top: 1.5%; padding-bottom: 1.5%;">WOMEN'S FALL-WINTER 2020</h3>
+                
+                <a href="https://www.chanel.com/sg/fashion/collection/fall-winter-2020-21/">
+                    <div class="col-md-12" style="padding-bottom: 4%; padding-right: 0; padding-left: 0;">
+                        <img src="./img/hinh_ngang.jpg" style="width: 100%;">
+                    </div>
+                </a>
+                
+            </div>
+
+            <div class="row">
+                <div class="col-md-6" style="padding: 4%; padding-right: 2%;">
+                  <!---->
+                  <a href="https://www.chanel.com/us/fashion/p/20K-PODIUM-011/look-11/">
+                    <div class="card  text-white">
+                    
+                        <img src="./img/dung1.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                          <h5 class="card-title" style="color: black;">Fall-winter 2020/21</h5>
+                          <p class="card-text" style="color: black;"><i>Last updated 2 mins ago</i></p>
+                        </div>
+                    </div>
+                  </a>
+                  
+                  <!---->
+                </div>
+                <div class="col-md-6" style="padding: 4%; padding-left: 2%;">
+                  
+                  <!---->
+                  <a href="https://www.chanel.com/us/fashion/p/20K-PODIUM-064/look-64/">
+                    <div class="card  text-white">
+                        <img src="./img/dung_2.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                          <h5 class="card-title" style="color: black;">Fall-winter 2020/21</h5>
+                          <p class="card-text" style="color: black;"><i>Last updated 5 mins ago</i></p>
+                        </div>
+                    </div>
+                  </a>
+                  
+                  <!---->
+                    
+                </div>
+            </div>
+
+            
+            <div class="row" style='background-color: #EEEEEE;'>
+                <h3 style="display: block; margin-left: auto; margin-right: auto; padding-top: 1.5%; padding-bottom: 1.5%;">WOMEN'S FALL-WINTER 2020</h3>
+                <a href="https://us.louisvuitton.com/eng-us/homepage#">
+                    <div class="col-md-12" style="padding-bottom: 4%; padding-right: 0; padding-left: 0;">
+                        <img src="./img/lv.webp" style="width: 100%;">
+                    </div>
+                </a>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6" style="padding: 4%; padding-right: 2%;">
+                  <!---->
+                  <a href="https://www.chanel.com/us/fashion/p/20K-PODIUM-051/look-51/">
+                    <div class="card  text-white">
+                        <img src="./img/dung3.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                          <h5 class="card-title" style="color: black;">Fall-winter 2020/21</h5>
+                          <p class="card-text" style="color: black;"><i>Last updated 17 mins ago</i></p>
+                        </div>
+                    </div>
+                  </a>
+                  
+                  <!---->
+                </div>
+                <div class="col-md-6" style="padding: 4%; padding-left: 2%;">
+                  
+                  <!---->
+
+                  <a href="https://www.chanel.com/us/fashion/p/20K-PODIUM-029/look-29/">
+                    <div class="card  text-white">
+                        <img src="./img/dung4.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                          <h5 class="card-title" style="color: black;">Fall-winter 2020/21</h5>
+                          <p class="card-text" style="color: black;"><i>Last updated 19 mins ago</i></p>
+                        </div>
+                    </div>
+                  </a>
+                  
+                  <!---->
+                    
+                </div>
+            </div>
+            
+            <!---item-->
+
+
+            <!-- modal -->
+
+            <!-- modal sign up -->
+        <div class="modal fade" id="sign-up" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header d-block">
+                  <button type="button" class="close float-right" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <h5 class="modal-title text-center" id="ModalLabel">Sign up</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-account" role="tabpanel" aria-labelledby="pills-account-tab">
+                                <form>
+                                    <div class="form-row">
+                                        <div class="col field">
+                                            <input type="text" class="form-control input" id="first-name" placeholder="First name">
+                                            <span class="check-valid hidden">required</span>
+                                        </div>
+                                        <div class="col field">
+                                            <input type="text" class="form-control input" id="last-name" placeholder="Last name">
+                                            <span class="check-valid hidden">required</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group field">
+                                        <input type="email" class="form-control input" placeholder="Email" id="email-signup">
+                                        <span class="check-valid hidden">required</span>
+                                    </div>
+                                    <div class="form-group field">
+                                        <input type="tel" class="form-control input" placeholder="Telephone" id="tel">
+                                        <span class="check-valid hidden">required</span>
+                                    </div>
+                                    <div class="form-group field">
+                                        <div class="input-group " id="show_hide_password">
+                                            <input class="form-control pass input" id="pwd-signup" type="password" placeholder="Password (> 5 characters, numbers and letters)">
+                                            <div class="input-group-addon pass">
+                                                <a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                                            </div>
+                                        </div>
+                                        <span class="check-valid hidden">required</span>
+                                    </div>
+                                    <div class="form-group field">
+                                        <input type="password" class="form-control input" placeholder="Confirm Password" id="pwd-confirm">
+                                        <span class="check-valid hidden">required</span>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="pills-info" role="tabpanel" aria-labelledby="pills-info-tab">
+                                <form>
+                                    <div class="form-group field">
+                                        <input type="text" class="form-control input" placeholder="Your height (m)" id="height">
+                                        <span class="check-valid hidden">required</span>
+                                    </div>
+                                    <div class="form-group field">
+                                        <input type="text" class="form-control input" placeholder="Your weight (kg)" id="weight">
+                                        <span class="check-valid hidden">required</span>
+                                    </div>
+                                    <div class="form-group field">
+                                        <input class="form-control input" placeholder="Your birth" class="textbox-n" type="text" onfocus="(this.type='date')" id="date">
+                                        <span class="check-valid hidden">required</span>
+                                    </div>
+                                    <div class="form-group field">
+                                        <input type="text" class="form-control input" placeholder="Your profession" id="profession">
+                                        <span class="check-valid hidden">required</span>
+                                    </div>
+                                    <div class="form-group  style_select">
+                                        <p class="guide-style">* You can select from the list of suggested styles or enter any style you like.</p>
+                                       <div class="row">
+                                            <div class="col-md-6 no-padding">
+                                                <input type="text" class="form-control input" placeholder="Your favorite style" id="style">
+                                            </div>
+                                            <div class="col-md-6 no-padding fix-select">
+                                                <div class="multi_select_box ">
+                                                    <select name="demo" class="multi_select w-100 input" multiple data-selected-text-format="count > 2" multiple title="List suggested style" data-size="5">
+                                                        <option data-content="<span class='fontsize-select'>Casual style</span>">Casual style</option>
+                                                        <option data-content="<span class='fontsize-select'>Sporty style</span>">Sporty style</option>
+                                                        <option data-content="<span class='fontsize-select'>Street style</span>">Street style</option>
+                                                        <option data-content="<span class='fontsize-select'>Vintage style</span>" >Vintage style</option>
+                                                        <option data-content="<span class='fontsize-select'>Girly style</span>">Girly style</option>
+                                                        <option data-content="<span class='fontsize-select'>Trendy style</span>" >Trendy style</option>
+                                                        <option data-content="<span class='fontsize-select'>Exotic style</span>">Exotic style</option>
+                                                    </select>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                        <span class="check-valid hidden">required</span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex text-center justify-content-center">
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item ">
+                                <a class="nav-link active" id="pills-account-tab" data-toggle="pill" href="#pills-account" role="tab" aria-controls="pills-account" aria-selected="true"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-info-tab" data-toggle="pill" href="#pills-info" role="tab" aria-controls="pills-info" aria-selected="false"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="form-group check">
+                        <div class="form-check">
+                            <input class="form-check-input mt-1" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                                I agree to Terms and Conditions
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary" id="submit">Sign up</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+            <!-- modal sign in -->
+            <div class="modal fade" id="sign-in" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header d-block">
+                    <button type="button" class="close float-right" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h5 class="modal-title text-center" id="ModalLabel">Sign in</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <div class="field">
+                                    <input type="text " class="form-control input" placeholder="Email or Telephone" id="email-tel">
+                                    <span class="check-valid hidden">required</span>
+                                </div>
+                                <div class="field">
+                                    <input type="password" class="form-control input" id="password" placeholder="Password">
+                                    <span class="check-valid hidden">required</span>                                    </div>
+                                </div>
+                        </form>
+                        <div class="signin-check">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <div class="form-check">
+                                            <input class="form-check-input mt-1" type="checkbox" id="gridCheck">
+                                            <label class="form-check-label" for="gridCheck">
+                                                    Remember me
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="forgot-pass col-6 text-right">
+                                    <a href="#">Forgot your password</a>
+                                   </div>
+                            </div>
+                        </div>
+                        <div class="d-flex ">
+                            <button type="submit" class="btn btn-primary" id="submit">Sign in</button>
+                        </div>
+                        <p class="sub">&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212; Or sign in with &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212; </p>
+                        <div class="d-flex justify-content-center other">
+                            <div class="box facebook text-center">
+                                <img class="img-fluid" src="../Signup-signin/img/facebook-icon.png">
+                                 Facebook
+                            </div>
+                                <div class="box text-center">
+                                <img class="img-fluid" src="../Signup-signin/img/google-icon.png">
+                                Google
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            
+        </div> <!--content-->
+    <!---------container----------->
+    </div>
+
+     <!-- footer -->
+    <div id="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="../Home_try/home_try_index.html"><img id="footer-logo" src="./img/logo-footer.png"></a>
+                    <div id="footer-slogan">Best clothes for you.</div>
+                </div>
+                <div class="col-md-3"></div>
+                <div class="col-md-3">
+                    <div class="footer-info">
+                        <p class="footer-title">Information</p>
+                        <a href="../About/about_index.html"class="footer-link">About us</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-info">
+                        <p class="footer-title">Contact us</p>
+                        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> University Of Science<br>
+                        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
+                        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jquery -->
+    <script 
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+
+    <!-- sign in, sign up javascript -->
+    <script src="./script/script.js"></script>
+		
+	<!-- bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.js" integrity="sha512-iqhWkvLOXVDz+Lr//ZryEKNvZ5pmgdKEe58Wh/VwfTGwTku0MKbuLhjJ1zUAJu8iSbOqfLcXrrxJ61+27THi2Q==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/bootstrap-select.min.js" integrity="sha512-yDlE7vpGDP7o2eftkCiPZ+yuUyEcaBwoJoIhdXv71KZWugFqEphIS3PU60lEkFaz8RxaVsMpSvQxMBaKVwA5xg==" crossorigin="anonymous"></script>
+    <!-- link javascript 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>-->
+</body>
+</html>

@@ -1,0 +1,165 @@
+
+/* nav */
+.modal-body .nav-item .nav-link{
+    background-color: white !important;
+    color: black !important;
+    font-weight: bold !important;
+    border-top: 3px solid grey !important;
+    border-radius: 0% !important;
+}
+
+.modal-body .nav-item .active {
+    border-top: 4px solid black !important;
+    border-radius: 0% !important;
+}
+
+
+/*modal*/
+
+
+#ModalLabel {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.modal-header {
+    border-bottom: 1px solid black;
+   padding-bottom: 10px;
+   margin-bottom: 10px;
+}
+
+
+/* form */
+
+.modal-body .nav-item {
+    margin-right: 20px;
+}
+
+.form-inline {
+    display: inline-block;
+}
+
+input.form-inline {
+    width: 60%;
+}
+
+#select-style {
+    border: 1px solid #f4f4f4;
+    background-color: #f4f4f4 !important;
+    width: 170px;
+    height: 46px;
+    margin-top: -5px;
+}
+
+#select-style:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+.check {
+    margin-left: 20px;
+}
+
+.modal-body button#submit {
+    background-color: black !important;
+    color: white !important;
+    text-transform: uppercase !important;
+    box-shadow: none !important;
+    outline: none !important;
+    border-color: black !important;
+    border-radius: 0% !important;
+    margin-top:10px;
+    width: 300px;
+    margin-left: 19%;
+}
+
+.modal-footer button {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+.modal-footer button:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+}
+
+#pills-profile {
+    margin-bottom: -12px;
+}
+
+.input-group-addon a, .input-group-addon a:hover{
+    color: black;
+}
+
+
+.pass {
+    display: inline-block;
+}
+
+.input-group-addon {
+    background-color: #d5dad5c0 ;
+    border-radius: 4px;
+    padding: 12px 15px;
+    margin-top: -4px;
+}
+
+input.pass {
+    margin-right: 0px;
+}
+
+/* ------------------- */
+.no-padding {
+    padding: 0px;
+}
+
+.fix-select {
+    padding: 0px 13px 0px 25px;
+    margin-top: -5px;
+    margin-bottom: 0px;
+   
+
+}
+
+
+
+.bootstrap-select > .dropdown-toggle[title='List suggested style'] {
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 0 !important;
+    padding: 12px 12px;
+    background-color: #f4f4f4;
+}
+
+.bootstrap-select > .dropdown-toggle[title='List suggested style']:focus {
+    border-radius: 0 !important;
+}
+
+.multi_select_box button {
+    height: 47px;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #f4f4f4 !important;
+}
+
+.multi_select_box button:focus {
+    background-color: #f4f4f4 !important;
+}
+
+
+.no-padding input {
+    margin-left: 15px;
+}
+
+.fontsize-select {
+    font-size: 16px;
+}
+
+.guide-style {
+    font-size: 15px;
+    margin-top: -10px;
+    margin-bottom: 5px;
+}

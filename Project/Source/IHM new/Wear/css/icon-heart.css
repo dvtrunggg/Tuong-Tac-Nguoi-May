@@ -1,0 +1,22 @@
+
+
+
+.ico {
+   border-radius: 50%;
+   cursor: pointer;
+   fill: #232323;
+   transition: .4s;
+   width: 35px;
+   height: auto;
+   margin-left: 110px;
+}
+
+.liked {
+    transform: scale(1.05) rotate(360deg);
+    background-color: #C62828;
+    padding: .3rem;
+    fill: white;
+}
+
+
+

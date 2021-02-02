@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(234,228,228);
+    margin-top: 100px;
+}
+.container {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
+}
+.panel{
+    height: 500px;
+}
+.more_member {
+    width: 100%;
+    height: 150px;
+    background-color: #c98592;
+    color: #fff;
+    line-height: 100px;
+    text-align: center;
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;    
+    align-items: center;
+}
+ul{
+    font-size: 20px;
+}
+h1{
+    font-size: 50px;
+    font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+div.more_member img{
+    display: block;
+    width:210px;
+    height:210px;
+    clip-path: circle(50px at 50% 50%);
+}
